@@ -5,141 +5,151 @@
 <h1>Dorfromantik Punktezähler</h1>
 
 <h3>Aufträge</h3>
-<div>
-    <label for="tasks-forest">Wald</label>
-    <input type="number" id="tasks-forest" @bind-value="scoreTable.Tasks.Forest" />
-</div>
-<div>
-    <label for="tasks-wheat">Getreide</label>
-    <input type="number" id="tasks-wheat" @bind-value="scoreTable.Tasks.Wheat" />
-</div>
-<div>
-    <label for="tasks-town">Stadt</label>
-    <input type="number" id="tasks-town" @bind-value="scoreTable.Tasks.Town" />
-</div>
-<div>
-    <label for="tasks-rails">Schiene</label>
-    <input type="number" id="tasks-rails" @bind-value="scoreTable.Tasks.Rails" />
-</div>
-<div>
-    <label for="tasks-river">Fluss</label>
-    <input type="number" id="tasks-river" @bind-value="scoreTable.Tasks.River" />
+<div class="input-group">
+    <div>
+        <label for="tasks-forest">Wald</label>
+        <input type="number" id="tasks-forest" @bind-value="scoreTable.Tasks.Forest" />
+    </div>
+    <div>
+        <label for="tasks-wheat">Getreide</label>
+        <input type="number" id="tasks-wheat" @bind-value="scoreTable.Tasks.Wheat" />
+    </div>
+    <div>
+        <label for="tasks-town">Stadt</label>
+        <input type="number" id="tasks-town" @bind-value="scoreTable.Tasks.Town" />
+    </div>
+    <div>
+        <label for="tasks-rails">Schiene</label>
+        <input type="number" id="tasks-rails" @bind-value="scoreTable.Tasks.Rails" />
+    </div>
+    <div>
+        <label for="tasks-river">Fluss</label>
+        <input type="number" id="tasks-river" @bind-value="scoreTable.Tasks.River" />
+    </div>
 </div>
 <h5>Summe Aufträge: @scoreTable.Tasks.Total</h5>
 
 <h3>Fahnen</h3>
-<div>
-    <label for="flags-forest">Wald</label>
-    <input type="number" id="flags-forest" @bind-value="scoreTable.Flags.Forest" />
-</div>
-<div>
-    <label for="flags-wheat">Getreide</label>
-    <input type="number" id="flags-wheat" @bind-value="scoreTable.Flags.Wheat" />
-</div>
-<div>
-    <label for="flags-town">Stadt</label>
-    <input type="number" id="flags-town" @bind-value="scoreTable.Flags.Town" />
-</div>
-<div>
-    <label for="flags-rails">Längste Schiene</label>
-    <input type="number" id="flags-rails" @bind-value="scoreTable.Flags.Rails" />
-</div>
-<div>
-    <label for="flags-river">Längster Fluss</label>
-    <input type="number" id="flags-river" @bind-value="scoreTable.Flags.River" />
+<div class="input-group">
+    <div>
+        <label for="flags-forest">Wald</label>
+        <input type="number" id="flags-forest" @bind-value="scoreTable.Flags.Forest" />
+    </div>
+    <div>
+        <label for="flags-wheat">Getreide</label>
+        <input type="number" id="flags-wheat" @bind-value="scoreTable.Flags.Wheat" />
+    </div>
+    <div>
+        <label for="flags-town">Stadt</label>
+        <input type="number" id="flags-town" @bind-value="scoreTable.Flags.Town" />
+    </div>
+    <div>
+        <label for="flags-rails">Längste Schiene</label>
+        <input type="number" id="flags-rails" @bind-value="scoreTable.Flags.Rails" />
+    </div>
+    <div>
+        <label for="flags-river">Längster Fluss</label>
+        <input type="number" id="flags-river" @bind-value="scoreTable.Flags.River" />
+    </div>
 </div>
 <h5>Summe Fahnen: @scoreTable.Flags.Total</h5>
 
 <h3>Freigespielt</h3>
-<h5>Basis</h5>
-<div>
-    <label for="unlock-redHeart" title="1/passende Kante">Rote Herzen</label>
-    <input type="number" id="unlock-redHeart" min="0" max="6" step="1" @bind-value="scoreTable.Unlockables.RedHearts" />
-</div>
-<div>
-    <label for="unlock-circus" title="Umschlossen = 10">Zirkus</label>
-    <input type="number" id="unlock-circus" min="0" max="10" step="10" @bind-value="scoreTable.Unlockables.Circus" />
-</div>
-<div>
-    <label for="unlock-signalman" title="2/Bahnübergang">Bahnwärter</label>
-    <input type="number" id="unlock-signalman" min="0" max="" step="2" @bind-value="scoreTable.Unlockables.Signalman" />
-</div>
-<div>
-    <label for="unlock-shepherd" title="1/Schaf">Schäferin</label>
-    <input type="number" id="unlock-shepherd" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Shepherd" />
-</div>
-<div>
-    <label for="unlock-hill" title="im Abstand 2 = 2/Auftrag">Hügel</label>
-    <input type="number" id="unlock-hill" min="0" max="" step="2" @bind-value="scoreTable.Unlockables.Hill" />
-</div>
-<div>
-    <label for="unlock-construction" title="pro Gebiet 7+ = 7">Baustelle</label>
-    <input type="number" id="unlock-construction" min="0" max="21" step="7" @bind-value="scoreTable.Unlockables.Construction" />
-</div>
-<div>
-    <label for="unlock-balloon" title="2/Entfernung">Ballon-Startplatz</label>
-    <input type="number" id="unlock-balloon" min="0" max="" step="2" @bind-value="scoreTable.Unlockables.Balloon" />
-</div>
-<div>
-    <label for="unlock-goldenHeart" title="2/passende Kante">Goldenes Herz</label>
-    <input type="number" id="unlock-goldenHeart" min="0" max="12" step="2" @bind-value="scoreTable.Unlockables.GoldenHeart" />
-</div>
-<div>
-    <label for="unlock-dblForest" title="Wald-Aufträge">Waldhütte</label>
-    <input type="number" id="unlock-dblForest" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.ForestHut" />
-</div>
-<div>
-    <label for="unlock-dblWheat" title="Getreide-Aufträge">Erntefest</label>
-    <input type="number" id="unlock-dblWheat" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.HarvestFestival" />
-</div>
-<div>
-    <label for="unlock-dblTown" title="Stadt-Aufträge">Wachturm</label>
-    <input type="number" id="unlock-dblTown" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.GuardTower" />
-</div>
-<div>
-    <label for="unlock-dblRails" title="Schienen-Aufträge">Lokomotive</label>
-    <input type="number" id="unlock-dblRails" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Locomotive" />
-</div>
-<div>
-    <label for="unlock-dblRiver" title="Fluss-Aufträge">Schiff</label>
-    <input type="number" id="unlock-dblRiver" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Riverboat" />
-</div>
-<div>
-    <label for="unlock-trainstation" title="beendet = 1/Plättchen">Bahnhof</label>
-    <input type="number" id="unlock-trainstation" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Trainstation" />
-</div>
-<div>
-    <label for="unlock-harbor" title="beendet = 1/Plättchen">Hafen</label>
-    <input type="number" id="unlock-harbor" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Harbor" />
+<div class="input-group">
+    <h5>Basis</h5>
+    <div>
+        <label for="unlock-redHeart" title="1/passende Kante">Rote Herzen</label>
+        <input type="number" id="unlock-redHeart" min="0" max="6" step="1" @bind-value="scoreTable.Unlockables.RedHearts" />
+    </div>
+    <div>
+        <label for="unlock-circus" title="Umschlossen = 10">Zirkus</label>
+        <input type="number" id="unlock-circus" min="0" max="10" step="10" @bind-value="scoreTable.Unlockables.Circus" />
+    </div>
+    <div>
+        <label for="unlock-signalman" title="2/Bahnübergang">Bahnwärter</label>
+        <input type="number" id="unlock-signalman" min="0" max="" step="2" @bind-value="scoreTable.Unlockables.Signalman" />
+    </div>
+    <div>
+        <label for="unlock-shepherd" title="1/Schaf">Schäferin</label>
+        <input type="number" id="unlock-shepherd" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Shepherd" />
+    </div>
+    <div>
+        <label for="unlock-hill" title="im Abstand 2 = 2/Auftrag">Hügel</label>
+        <input type="number" id="unlock-hill" min="0" max="" step="2" @bind-value="scoreTable.Unlockables.Hill" />
+    </div>
+    <div>
+        <label for="unlock-construction" title="pro Gebiet 7+ = 7">Baustelle</label>
+        <input type="number" id="unlock-construction" min="0" max="21" step="7" @bind-value="scoreTable.Unlockables.Construction" />
+    </div>
+    <div>
+        <label for="unlock-balloon" title="2/Entfernung">Ballon-Startplatz</label>
+        <input type="number" id="unlock-balloon" min="0" max="" step="2" @bind-value="scoreTable.Unlockables.Balloon" />
+    </div>
+    <div>
+        <label for="unlock-goldenHeart" title="2/passende Kante">Goldenes Herz</label>
+        <input type="number" id="unlock-goldenHeart" min="0" max="12" step="2" @bind-value="scoreTable.Unlockables.GoldenHeart" />
+    </div>
+    <div>
+        <label for="unlock-dblForest" title="Wald-Aufträge">Waldhütte</label>
+        <input type="number" id="unlock-dblForest" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.ForestHut" />
+    </div>
+    <div>
+        <label for="unlock-dblWheat" title="Getreide-Aufträge">Erntefest</label>
+        <input type="number" id="unlock-dblWheat" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.HarvestFestival" />
+    </div>
+    <div>
+        <label for="unlock-dblTown" title="Stadt-Aufträge">Wachturm</label>
+        <input type="number" id="unlock-dblTown" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.GuardTower" />
+    </div>
+    <div>
+        <label for="unlock-dblRails" title="Schienen-Aufträge">Lokomotive</label>
+        <input type="number" id="unlock-dblRails" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Locomotive" />
+    </div>
+    <div>
+        <label for="unlock-dblRiver" title="Fluss-Aufträge">Schiff</label>
+        <input type="number" id="unlock-dblRiver" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Riverboat" />
+    </div>
+    <div>
+        <label for="unlock-trainstation" title="beendet = 1/Plättchen">Bahnhof</label>
+        <input type="number" id="unlock-trainstation" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Trainstation" />
+    </div>
+    <div>
+        <label for="unlock-harbor" title="beendet = 1/Plättchen">Hafen</label>
+        <input type="number" id="unlock-harbor" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Harbor" />
+    </div>
 </div>
 
 @if (millExpansion)
 {
-    <h5>Mühle</h5>
-    <div>
-        <label for="unlock-mill" title="abgeschlossen = 2/Auftrag und Fahne">Große Mühle</label>
-        <input type="number" id="unlock-mill" min="0" max="" step="2" @bind-value="scoreTable.Unlockables.Mill" />
+    <div class="input-group">
+        <h5>Mühle</h5>
+        <div>
+            <label for="unlock-mill" title="abgeschlossen = 2/Auftrag + 2/Fahne">Große Mühle</label>
+            <input type="number" id="unlock-mill" min="0" max="" step="2" @bind-value="scoreTable.Unlockables.Mill" />
+        </div>
     </div>
 }
 
 @if (duelExpansion)
 {
-    <h5>Duell</h5>
-    <div>
-        <label for="unlock-photo" title="1/Kameramarker">Fotograf</label>
-        <input type="number" id="unlock-photo" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Photographer" />
-    </div>
-    <div>
-        <label for="unlock-school" title="im Abstand 2 = 1/Stadtplättchen">Schule</label>
-        <input type="number" id="unlock-school" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.School" />
-    </div>
-    <div>
-        <label for="unlock-granary" title="im Abstand 2 = 1/Getreideplättchen">Kornspeicher</label>
-        <input type="number" id="unlock-granary" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Granary" />
-    </div>
-    <div>
-        <label for="unlock-oak" title="im Abstand 2 = 1/Waldplättchen">Alte Eiche</label>
-        <input type="number" id="unlock-oak" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Oak" />
+    <div class="input-group">
+        <h5>Duell</h5>
+        <div>
+            <label for="unlock-photo" title="1/Kameramarker">Fotograf</label>
+            <input type="number" id="unlock-photo" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Photographer" />
+        </div>
+        <div>
+            <label for="unlock-school" title="im Abstand 2 = 1/Stadtplättchen">Schule</label>
+            <input type="number" id="unlock-school" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.School" />
+        </div>
+        <div>
+            <label for="unlock-granary" title="im Abstand 2 = 1/Getreideplättchen">Kornspeicher</label>
+            <input type="number" id="unlock-granary" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Granary" />
+        </div>
+        <div>
+            <label for="unlock-oak" title="im Abstand 2 = 1/Waldplättchen">Alte Eiche</label>
+            <input type="number" id="unlock-oak" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Oak" />
+        </div>
     </div>
 }
 <h5>Summe Freigespielt: @scoreTable.Unlockables.Total</h5>
@@ -167,6 +177,17 @@
     label {
         display: inline-block;
         width: 150px;
+    }
+
+    input[type=number] {
+        min-width: 150px;
+    }
+
+    div.input-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.5em;
     }
 </style>
 
