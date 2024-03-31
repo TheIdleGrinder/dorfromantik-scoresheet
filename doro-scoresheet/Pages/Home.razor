@@ -116,11 +116,31 @@
 @if (millExpansion)
 {
     <h5>Mühle</h5>
+    <div>
+        <label for="unlock-mill" title="abgeschlossen = 2/Auftrag und Fahne">Große Mühle</label>
+        <input type="number" id="unlock-mill" min="0" max="" step="2" @bind-value="scoreTable.Unlockables.Mill" />
+    </div>
 }
 
 @if (duelExpansion)
 {
     <h5>Duell</h5>
+    <div>
+        <label for="unlock-photo" title="1/Kameramarker">Fotograf</label>
+        <input type="number" id="unlock-photo" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Photographer" />
+    </div>
+    <div>
+        <label for="unlock-school" title="im Abstand 2 = 1/Stadtplättchen">Schule</label>
+        <input type="number" id="unlock-school" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.School" />
+    </div>
+    <div>
+        <label for="unlock-granary" title="im Abstand 2 = 1/Getreideplättchen">Kornspeicher</label>
+        <input type="number" id="unlock-granary" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Granary" />
+    </div>
+    <div>
+        <label for="unlock-oak" title="im Abstand 2 = 1/Waldplättchen">Alte Eiche</label>
+        <input type="number" id="unlock-oak" min="0" max="" step="1" @bind-value="scoreTable.Unlockables.Oak" />
+    </div>
 }
 <h5>Summe Freigespielt: @scoreTable.Unlockables.Total</h5>
 
@@ -139,7 +159,7 @@
 
 <style>
     #feature-selector {
-        margin-top: 1em;
+        margin: 1em;
         padding: 1em;
         border: 1px solid gray;
     }

@@ -38,10 +38,17 @@
         public int Riverboat { get; set; } = 0;
         public int Trainstation { get; set; } = 0;
         public int Harbor { get; set; } = 0;
+        public int Mill { get; set; } = 0;
+        public int Photographer { get; set; } = 0;
+        public int School { get; set; } = 0;
+        public int Granary { get; set; } = 0;
+        public int Oak { get; set; } = 0;
 
         public int Total => RedHearts + Circus + Signalman + Shepherd + Hill 
                             + Construction + Balloon + GoldenHeart + ForestHut + HarvestFestival 
-                            + GuardTower + Locomotive + Riverboat + Trainstation + Harbor;
+                            + GuardTower + Locomotive + Riverboat + Trainstation + Harbor
+                            + Mill
+                            + Photographer + School + Granary + Oak;
     }
 
 }
