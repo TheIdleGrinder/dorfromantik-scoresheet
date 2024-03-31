@@ -5,6 +5,10 @@
 <h1>Dorfromantik Punktezähler</h1>
 
 <h3>Aufträge</h3>
+<div>
+    <label for="tasks-forest">Wald</label>
+    <input type="number" id="tasks-forest" name="tasks-forest" @bind-value="scoreTable.Tasks.Forest" />
+</div>
 <h3>Fahnen</h3>
 <h3>Freigespielt</h3>
 <h5>Basis</h5>
@@ -41,4 +45,6 @@
 {
     private bool millExpansion = false;
     private bool duelExpansion = false;
+
+    private doro.ScoreTable scoreTable = new doro.ScoreTable();
 }
