@@ -1,7 +1,31 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Dorfromantik Score Sheet</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Dorfromantik Score Sheet</h1>
 
-Welcome to your new app.
+<fieldset id="feature-selector">
+    <legend>Erweiterungen</legend>
+    <div>
+        <input type="checkbox" id="mill-checkbox" name="mill-checkbox" @bind-value="millExpansion" />
+        <label for="mill-checkbox">Mühle</label>
+    </div>
+    <div>
+        <input type="checkbox" id="duel-checkbox" name="duel-checkbox" @bind-value="duelExpansion" />
+        <label for="duel-checkbox">Duell</label>
+    </div>
+</fieldset>
+
+<style>
+    #feature-selector {
+        margin-top: 1em;
+        padding: 1em;
+        border: 1px solid gray;
+    }
+</style>
+
+@code
+{
+    private bool millExpansion = false;
+    private bool duelExpansion = false;
+}
