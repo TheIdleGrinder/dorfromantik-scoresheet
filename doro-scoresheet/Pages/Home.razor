@@ -33,11 +33,11 @@
     <div class="input-group">
         <h5>Duell</h5>
         <div>
-            <label for="tasks-combo">Kombination</label>
-            <input type="number" id="tasks-combo" min="0" max="18" @bind-value="scoreTable.Tasks.Combo" />
+            <label for="tasks-double">Doppel</label>
+            <input type="number" id="tasks-double" min="0" max="18" @bind-value="scoreTable.Tasks.Double" />
         </div>
         <div>
-            <label for="tasks-surround">Umgebung</label>
+            <label for="tasks-surround">Rundum</label>
             <input type="number" id="tasks-surround" min="0" max="18" @bind-value="scoreTable.Tasks.Surround" />
         </div>
     </div>
@@ -169,8 +169,12 @@
 }
 <h5>Summe Freigespielt: @scoreTable.Unlockables.Total</h5>
 
-
+<hr />
+<h5>Aufgaben: @scoreTable.Tasks.Total</h5>
+<h5>Fahnen: @scoreTable.Flags.Total</h5>
+<h5>Freigespielt: @scoreTable.Unlockables.Total</h5>
 <h4>Gesamt: @scoreTable.Total</h4>
+
 <fieldset id="feature-selector">
     <legend>Erweiterungen</legend>
     <div>

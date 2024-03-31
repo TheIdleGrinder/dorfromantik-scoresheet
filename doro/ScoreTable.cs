@@ -16,10 +16,10 @@
         public int Town { get; set; } = 0;
         public int Rails { get; set; } = 0;
         public int River { get; set; } = 0;
-        public int Combo { get; set; } = 0;
+        public int Double { get; set; } = 0;
         public int Surround { get; set; } = 0;
 
-        public int Total => Forest + Wheat + Town + Rails + River + Combo + Surround;
+        public int Total => Forest + Wheat + Town + Rails + River + Double + Surround;
     }
 
     public class Unlockables
