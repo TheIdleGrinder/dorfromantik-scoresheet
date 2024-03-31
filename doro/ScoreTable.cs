@@ -2,11 +2,46 @@
 {
     public class ScoreTable
     {
-        public Tasks Tasks { get; set; } = new();
+        public TerrainGroup Tasks { get; set; } = new();
+        public TerrainGroup Flags { get; set; } = new();
+
+        public UnlockablesBase Unlockables { get; set; } = new();
+
+        public int Total => Tasks.Total + Flags.Total + Unlockables.Total;
     }
 
-    public class Tasks
+    public class TerrainGroup
     {
         public int Forest { get; set; } = 0;
+        public int Wheat { get; set; } = 0;
+        public int Town { get; set; } = 0;
+        public int Rails { get; set; } = 0;
+        public int River { get; set; } = 0;
+
+        public int Total => Forest + Wheat + Town + Rails + River;
     }
+
+    public class UnlockablesBase
+    {
+        public int RedHearts { get; set; } = 0;
+        public int Circus { get; set; } = 0;
+        public int Signalman { get; set; } = 0;
+        public int Shepherd { get; set; } = 0;
+        public int Hill { get; set; } = 0;
+        public int Construction { get; set; } = 0;
+        public int Balloon { get; set; } = 0;
+        public int GoldenHeart { get; set; } = 0;
+        public int ForestHut { get; set; } = 0;
+        public int HarvestFestival { get; set; } = 0;
+        public int GuardTower { get; set; } = 0;
+        public int Locomotive { get; set; } = 0;
+        public int Riverboat { get; set; } = 0;
+        public int Trainstation { get; set; } = 0;
+        public int Harbor { get; set; } = 0;
+
+        public int Total => RedHearts + Circus + Signalman + Shepherd + Hill 
+                            + Construction + Balloon + GoldenHeart + ForestHut + HarvestFestival 
+                            + GuardTower + Locomotive + Riverboat + Trainstation + Harbor;
+    }
+
 }

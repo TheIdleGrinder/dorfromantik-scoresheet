@@ -7,11 +7,52 @@
 <h3>Aufträge</h3>
 <div>
     <label for="tasks-forest">Wald</label>
-    <input type="number" id="tasks-forest" name="tasks-forest" @bind-value="scoreTable.Tasks.Forest" />
+    <input type="number" id="tasks-forest" @bind-value="scoreTable.Tasks.Forest" />
 </div>
+<div>
+    <label for="tasks-wheat">Getreide</label>
+    <input type="number" id="tasks-wheat" @bind-value="scoreTable.Tasks.Wheat" />
+</div>
+<div>
+    <label for="tasks-town">Stadt</label>
+    <input type="number" id="tasks-town" @bind-value="scoreTable.Tasks.Town" />
+</div>
+<div>
+    <label for="tasks-rails">Schiene</label>
+    <input type="number" id="tasks-rails" @bind-value="scoreTable.Tasks.Rails" />
+</div>
+<div>
+    <label for="tasks-river">Fluss</label>
+    <input type="number" id="tasks-river" @bind-value="scoreTable.Tasks.River" />
+</div>
+<h5>Summe Aufträge: @scoreTable.Tasks.Total</h5>
+
 <h3>Fahnen</h3>
+<div>
+    <label for="flags-forest">Wald</label>
+    <input type="number" id="flags-forest" @bind-value="scoreTable.Flags.Forest" />
+</div>
+<div>
+    <label for="flags-wheat">Getreide</label>
+    <input type="number" id="flags-wheat" @bind-value="scoreTable.Flags.Wheat" />
+</div>
+<div>
+    <label for="flags-town">Stadt</label>
+    <input type="number" id="flags-town" @bind-value="scoreTable.Flags.Town" />
+</div>
+<div>
+    <label for="flags-rails">Längste Schiene</label>
+    <input type="number" id="flags-rails" @bind-value="scoreTable.Flags.Rails" />
+</div>
+<div>
+    <label for="flags-river">Längster Fluss</label>
+    <input type="number" id="flags-river" @bind-value="scoreTable.Flags.River" />
+</div>
+<h5>Summe Fahnen: @scoreTable.Flags.Total</h5>
+
 <h3>Freigespielt</h3>
 <h5>Basis</h5>
+
 @if (millExpansion)
 {
     <h5>Mühle</h5>
@@ -20,7 +61,7 @@
 {
     <h5>Duell</h5>
 }
-
+<h4>Gesamt: @scoreTable.Total</h4>
 <fieldset id="feature-selector">
     <legend>Erweiterungen</legend>
     <div>
@@ -38,6 +79,11 @@
         margin-top: 1em;
         padding: 1em;
         border: 1px solid gray;
+    }
+
+    label {
+        display: inline-block;
+        width: 150px;
     }
 </style>
 
