@@ -6,50 +6,65 @@
 
 <h3>Aufträge</h3>
 <div class="input-group">
+    <h5>Basis</h5>
     <div>
         <label for="tasks-forest">Wald</label>
-        <input type="number" id="tasks-forest" @bind-value="scoreTable.Tasks.Forest" />
+        <input type="number" id="tasks-forest" min="0" max="37" @bind-value="scoreTable.Tasks.Forest" />
     </div>
     <div>
         <label for="tasks-wheat">Getreide</label>
-        <input type="number" id="tasks-wheat" @bind-value="scoreTable.Tasks.Wheat" />
+        <input type="number" id="tasks-wheat" min="0" max="37" @bind-value="scoreTable.Tasks.Wheat" />
     </div>
     <div>
         <label for="tasks-town">Stadt</label>
-        <input type="number" id="tasks-town" @bind-value="scoreTable.Tasks.Town" />
+        <input type="number" id="tasks-town" min="0" max="37" @bind-value="scoreTable.Tasks.Town" />
     </div>
     <div>
         <label for="tasks-rails">Schiene</label>
-        <input type="number" id="tasks-rails" @bind-value="scoreTable.Tasks.Rails" />
+        <input type="number" id="tasks-rails" min="0" max="30" @bind-value="scoreTable.Tasks.Rails" />
     </div>
     <div>
         <label for="tasks-river">Fluss</label>
-        <input type="number" id="tasks-river" @bind-value="scoreTable.Tasks.River" />
+        <input type="number" id="tasks-river" min="0" max="30" @bind-value="scoreTable.Tasks.River" />
     </div>
 </div>
+@if (duelExpansion)
+{
+    <div class="input-group">
+        <h5>Duell</h5>
+        <div>
+            <label for="tasks-combo">Kombination</label>
+            <input type="number" id="tasks-combo" min="0" max="18" @bind-value="scoreTable.Tasks.Combo" />
+        </div>
+        <div>
+            <label for="tasks-surround">Umgebung</label>
+            <input type="number" id="tasks-surround" min="0" max="18" @bind-value="scoreTable.Tasks.Surround" />
+        </div>
+    </div>
+}
 <h5>Summe Aufträge: @scoreTable.Tasks.Total</h5>
 
 <h3>Fahnen</h3>
 <div class="input-group">
     <div>
         <label for="flags-forest">Wald</label>
-        <input type="number" id="flags-forest" @bind-value="scoreTable.Flags.Forest" />
+        <input type="number" id="flags-forest" min="0" @bind-value="scoreTable.Flags.Forest" />
     </div>
     <div>
         <label for="flags-wheat">Getreide</label>
-        <input type="number" id="flags-wheat" @bind-value="scoreTable.Flags.Wheat" />
+        <input type="number" id="flags-wheat" min="0" @bind-value="scoreTable.Flags.Wheat" />
     </div>
     <div>
         <label for="flags-town">Stadt</label>
-        <input type="number" id="flags-town" @bind-value="scoreTable.Flags.Town" />
+        <input type="number" id="flags-town" min="0" @bind-value="scoreTable.Flags.Town" />
     </div>
     <div>
         <label for="flags-rails">Längste Schiene</label>
-        <input type="number" id="flags-rails" @bind-value="scoreTable.Flags.Rails" />
+        <input type="number" id="flags-rails" min="0" @bind-value="scoreTable.Flags.Rails" />
     </div>
     <div>
         <label for="flags-river">Längster Fluss</label>
-        <input type="number" id="flags-river" @bind-value="scoreTable.Flags.River" />
+        <input type="number" id="flags-river" min="0" @bind-value="scoreTable.Flags.River" />
     </div>
 </div>
 <h5>Summe Fahnen: @scoreTable.Flags.Total</h5>
@@ -154,6 +169,7 @@
 }
 <h5>Summe Freigespielt: @scoreTable.Unlockables.Total</h5>
 
+
 <h4>Gesamt: @scoreTable.Total</h4>
 <fieldset id="feature-selector">
     <legend>Erweiterungen</legend>
@@ -180,7 +196,7 @@
     }
 
     input[type=number] {
-        width: 150px;
+        width: 100px;
     }
 
     div.input-group {

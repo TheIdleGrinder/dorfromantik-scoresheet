@@ -4,8 +4,7 @@
     {
         public TerrainGroup Tasks { get; set; } = new();
         public TerrainGroup Flags { get; set; } = new();
-
-        public UnlockablesBase Unlockables { get; set; } = new();
+        public Unlockables Unlockables { get; set; } = new();
 
         public int Total => Tasks.Total + Flags.Total + Unlockables.Total;
     }
@@ -17,11 +16,13 @@
         public int Town { get; set; } = 0;
         public int Rails { get; set; } = 0;
         public int River { get; set; } = 0;
+        public int Combo { get; set; } = 0;
+        public int Surround { get; set; } = 0;
 
-        public int Total => Forest + Wheat + Town + Rails + River;
+        public int Total => Forest + Wheat + Town + Rails + River + Combo + Surround;
     }
 
-    public class UnlockablesBase
+    public class Unlockables
     {
         public int RedHearts { get; set; } = 0;
         public int Circus { get; set; } = 0;
