@@ -22,29 +22,6 @@ namespace doro
             return baseGoals;
         }
 
-        public static GoalPack GetMillGoals()
-        {
-            var millGoals = new GoalPack("mill", "Mühle");
-            var millUnlockables = new GoalCategory(UNLOCKABLES, "Freigespielt");
-            millUnlockables.Goals.Add(new Goal("mill", "Große Mühle", UNLIMITED, 2, "abgeschlossen = 2/Auftrag + 2/Fahne"));
-            millGoals.Categories.Add(millUnlockables);
-            return millGoals;
-        }
-
-        public static GoalPack GetDuelGoals()
-        {
-            var duelGoals = new GoalPack("duel", "Duell");
-            var duelTasks = new GoalCategory(TASKS, "Aufträge");
-            duelTasks.Goals.Add(new Goal("double", "Doppel", 18));
-            duelTasks.Goals.Add(new Goal("surround", "Rundum", 18));
-            duelGoals.Categories.Add(duelTasks);
-            var duelUnlockables = new GoalCategory(UNLOCKABLES, "Freigespielt");
-            duelUnlockables.Goals.Add(new Goal("photo", "Fotograf", UNLIMITED, 1, "1/Kameramarker"));
-            duelUnlockables.Goals.Add(new Goal("school", "Schule", UNLIMITED, 1, "im Abstand 2 = 1/Stadtplättchen"));
-            duelUnlockables.Goals.Add(new Goal("granary", "Kornspeicher", UNLIMITED, 1, "im Abstand 2 = 1/Getreideplättchen"));
-            duelUnlockables.Goals.Add(new Goal("oak", "Alte Eiche", UNLIMITED, 1, "im Abstand 2 = 1/Waldplättchen"));
-        }
-
         private static GoalCategory GetBaseTasks()
         {
             var baseTasks = new GoalCategory(TASKS, "Aufträge");
@@ -86,6 +63,31 @@ namespace doro
             baseUnlockables.Goals.Add(new Goal("trainstation", "Bahnhof", UNLIMITED, 2, "beendet = 1/Plättchen"));
             baseUnlockables.Goals.Add(new Goal("harbor", "Hafen", UNLIMITED, 2, "beendet = 1/Plättchen"));
             return baseUnlockables;
+        }
+
+        public static GoalPack GetMillGoals()
+        {
+            var millGoals = new GoalPack("mill", "Mühle");
+            var millUnlockables = new GoalCategory(UNLOCKABLES, "Freigespielt");
+            millUnlockables.Goals.Add(new Goal("mill", "Große Mühle", UNLIMITED, 2, "abgeschlossen = 2/Auftrag + 2/Fahne"));
+            millGoals.Categories.Add(millUnlockables);
+            return millGoals;
+        }
+
+        public static GoalPack GetDuelGoals()
+        {
+            var duelGoals = new GoalPack("duel", "Duell");
+            var duelTasks = new GoalCategory(TASKS, "Aufträge");
+            duelTasks.Goals.Add(new Goal("double", "Doppel", 18));
+            duelTasks.Goals.Add(new Goal("surround", "Rundum", 18));
+            duelGoals.Categories.Add(duelTasks);
+            var duelUnlockables = new GoalCategory(UNLOCKABLES, "Freigespielt");
+            duelUnlockables.Goals.Add(new Goal("photo", "Fotograf", UNLIMITED, 1, "1/Kameramarker"));
+            duelUnlockables.Goals.Add(new Goal("school", "Schule", UNLIMITED, 1, "im Abstand 2 = 1/Stadtplättchen"));
+            duelUnlockables.Goals.Add(new Goal("granary", "Kornspeicher", UNLIMITED, 1, "im Abstand 2 = 1/Getreideplättchen"));
+            duelUnlockables.Goals.Add(new Goal("oak", "Alte Eiche", UNLIMITED, 1, "im Abstand 2 = 1/Waldplättchen"));
+            duelGoals.Categories.Add(duelUnlockables);
+            return duelGoals;
         }
     }
 }
