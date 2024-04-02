@@ -45,8 +45,9 @@ namespace doro
             Score[packId][categoryId][goalId] = value;
         }
 
-        public int GetCategoryScore(string packId, string categoryId)
+        public int GetCategoryScore(GameConfiguration game, string categoryId)
         {
+            
             int score = 0;
             foreach (var pack in Score)
             {
