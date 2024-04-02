@@ -13,6 +13,13 @@ namespace doro
         const string FLAGS = "flags";
         const string UNLOCKABLES = "unlockables";
 
+        public static GameConfiguration GetBaseGame()
+        {
+            var baseGame = new GameConfiguration();
+            baseGame.AddPack(GetBaseGoals(), true);
+            return baseGame;
+        }
+
         public static GoalPack GetBaseGoals()
         {
             var baseGoals = new GoalPack("base", "Basis");

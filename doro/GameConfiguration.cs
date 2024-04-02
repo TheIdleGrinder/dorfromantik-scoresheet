@@ -22,9 +22,21 @@ namespace doro
             return GoalPacks.FirstOrDefault(p => p.Id == packId) ?? throw new Exception($"Game does not contain pack '{packId}'");
         }
 
+        public bool HasPack(string packId)
+        {
+            return GoalPacks.Any(p => p.Id == packId);
+        }
+
         public List<string> GetCategories()
         {
             return GoalPacks.SelectMany(p => p.Categories).Select(c => c.Id).ToHashSet().ToList();
+        }
+
+        public string GetCategoryName(string categoryId)
+        {
+            return GoalPacks.SelectMany(p => p.Categories).
+                FirstOrDefault(c => c.Id == categoryId)?.Name 
+                ?? throw new Exception($"Category '{categoryId}' does not exist in game");
         }
 
         public void SetRequiredPack(string packId, bool required)
