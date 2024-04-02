@@ -45,15 +45,55 @@ namespace doro
             Score[packId][categoryId][goalId] = value;
         }
 
+        public int GetTotalScore(GameConfiguration game)
+        {
+            int score = 0;
+            foreach (var pack in game.GoalPacks)
+            {
+                foreach (var category in pack.Categories)
+                {
+                    foreach (var goal in category.Goals)
+                    {
+                        score += GetScore(pack.Id, category.Id, goal.Id);
+                    }
+                }
+            }
+            return score;
+        }
+
+        public int GetPackScore(GameConfiguration game, string packId)
+        {
+            int score = 0;
+            foreach (var pack in game.GoalPacks)
+            {
+                if (pack.Id == packId)
+                {
+                    foreach (var category in pack.Categories)
+                    {
+                        foreach (var goal in category.Goals)
+                        {
+                            score += GetScore(pack.Id, category.Id, goal.Id);
+                        }
+                    }
+                }
+            }
+            return score;
+        }
+
         public int GetCategoryScore(GameConfiguration game, string categoryId)
         {
-            
             int score = 0;
-            foreach (var pack in Score)
+            foreach (var pack in game.GoalPacks)
             {
-                if (pack.Value.ContainsKey(categoryId))
+                foreach (var category in pack.Categories)
                 {
-                    score += pack.Value[categoryId].Values.Sum();
+                    if (category.Id == categoryId)
+                    {
+                        foreach (var goal in category.Goals)
+                        {
+                            score += GetScore(pack.Id, categoryId, goal.Id);
+                        }
+                    }
                 }
             }
             return score;

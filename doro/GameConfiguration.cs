@@ -22,6 +22,11 @@ namespace doro
             return GoalPacks.FirstOrDefault(p => p.Id == packId) ?? throw new Exception($"Game does not contain pack '{packId}'");
         }
 
+        public List<string> GetCategories()
+        {
+            return GoalPacks.SelectMany(p => p.Categories).Select(c => c.Id).ToHashSet().ToList();
+        }
+
         public void SetRequiredPack(string packId, bool required)
         {
             _ = GetPack(packId); // Ensure pack exists
