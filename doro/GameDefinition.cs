@@ -34,7 +34,7 @@ namespace doro
 
         public List<GoalPack> GetAllPacks()
         {
-            return new List<GoalPack> { BaseGoals }.Concat(ExpansionPacks).ToList();
+            return [BaseGoals, .. ExpansionPacks];
         }
 
         public List<string> GetAllCategoryIds()
