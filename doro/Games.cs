@@ -8,13 +8,7 @@ namespace doro
 {
     public static class Games
     {
-        public readonly static GameDefinition Dorfromantik = new(
-            "doro",
-            "Das Brettspiel",
-            1,
-            GameFactory.GetBaseGoals(),
-            [ GameFactory.GetMillGoals(), GameFactory.GetDuelGoals() ]
-        );
+        public readonly static GameDefinition Dorfromantik = GameDefinitions.Doro.GetGame();
 
         public readonly static GameDefinition Duel = GameDefinitions.Duel.GetGame();
 

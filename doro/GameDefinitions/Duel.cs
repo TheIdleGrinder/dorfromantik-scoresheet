@@ -29,7 +29,7 @@ namespace doro.GameDefinitions
 
         private static GoalCategory GetBaseTasks()
         {
-            var baseTasks = new GoalCategory(GameFactory.TASKS, "Aufträge");
+            var baseTasks = new GoalCategory("tasks", "Aufträge");
             baseTasks.Goals.Add(new Goal("forest", "Wald", 18));
             baseTasks.Goals.Add(new Goal("wheat", "Getreide", 18));
             baseTasks.Goals.Add(new Goal("village", "Dorf", 18));
@@ -42,7 +42,7 @@ namespace doro.GameDefinitions
 
         private static GoalCategory GetBaseFlags()
         {
-            var baseFlags = new GoalCategory(GameFactory.FLAGS, "Flaggen");
+            var baseFlags = new GoalCategory("flags", "Flaggen");
             baseFlags.Goals.Add(new Goal("forest", "Wald"));
             baseFlags.Goals.Add(new Goal("wheat", "Getreide"));
             baseFlags.Goals.Add(new Goal("village", "Dorf"));

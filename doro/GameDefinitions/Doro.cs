@@ -4,20 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace doro
+namespace doro.GameDefinitions
 {
-    public static class GameFactory
+    public static class Doro
     {
-        public const int UNLIMITED = Int32.MaxValue;
-        public const string TASKS = "tasks";
-        public const string FLAGS = "flags";
-        public const string UNLOCKABLES = "unlockables";
+        const string TASKS = "tasks";
+        const string FLAGS = "flags";
+        const string UNLOCKABLES = "unlockables";
+        const int UNLIMITED = Int32.MaxValue;
 
-        public static GameConfiguration GetBaseGame()
+        public static GameDefinition GetGame()
         {
-            var baseGame = new GameConfiguration();
-            baseGame.AddPack(GetBaseGoals(), true);
-            return baseGame;
+            return new GameDefinition(
+                "doro",
+                "Das Brettspiel",
+                1,
+                GetBaseGoals(),
+                [ GetMillGoals(), GetDuelGoals() ]
+            );
         }
 
         public static GoalPack GetBaseGoals()
