@@ -78,7 +78,7 @@ namespace doro.GameDefinitions
 
         public static GoalPack GetMillGoals()
         {
-            var millGoals = new GoalPack("mill", "Mühle");
+            var millGoals = new GoalPack("mill", "Große Mühle");
             var millUnlockables = new GoalCategory(UNLOCKABLES, "Freigespielt");
             millUnlockables.Goals.Add(new Goal("mill", "Große Mühle", UNLIMITED, 2, "abgeschlossen = 2/Auftrag + 2/Fahne"));
             millGoals.Categories.Add(millUnlockables);
@@ -87,7 +87,7 @@ namespace doro.GameDefinitions
 
         public static GoalPack GetDuelGoals()
         {
-            var duelGoals = new GoalPack("duel", "Duell");
+            var duelGoals = new GoalPack("duel", "Das Duell");
             var duelTasks = new GoalCategory(TASKS, "Aufträge");
             duelTasks.Goals.Add(new Goal("double", "Doppel", 18));
             duelTasks.Goals.Add(new Goal("surround", "Rundum", 18));

@@ -41,10 +41,14 @@
     @if (Game.HasCategory(category))
     {
         <h3>@Game.GetCategoryName(category)</h3>
-        @foreach (GoalPack pack in Definition.GetAllPacks().Where(p => Game.HasPack(p.Id) && p.HasCategory(category)))
+        var packs = Definition.GetAllPacks().Where(p => Game.HasPack(p.Id) && p.HasCategory(category)).ToList();
+        @foreach (GoalPack pack in packs)
         {
             <div class="input-group">
-                <h5>@pack.Name</h5>
+                @if (packs.Count > 1)
+                {
+                    <h5>@pack.Name</h5>
+                }
                 @foreach (Goal goal in pack.GetCategory(category).Goals)
                 {
                     string inputId = $"{pack.Id}-{category}-{goal.Id}";
