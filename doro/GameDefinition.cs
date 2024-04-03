@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace doro
 {
-    public class GameDefinition(string id, string name, GoalPack baseGoals, List<GoalPack> expansions)
+    public class GameDefinition(string id, string name, int players, GoalPack baseGoals, List<GoalPack> expansions)
     {
         public string Id { get; } = id;
         public string Name { get; } = name;
+        public int Players { get; } = players;
         public GoalPack BaseGoals { get; } = baseGoals;
         public List<GoalPack> ExpansionPacks { get; } = expansions;
 

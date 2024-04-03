@@ -11,6 +11,7 @@ namespace doro
         public readonly static GameDefinition Dorfromantik = new(
             "doro",
             "Das Brettspiel",
+            1,
             GameFactory.GetBaseGoals(),
             [ GameFactory.GetMillGoals(), GameFactory.GetDuelGoals() ]
         );
