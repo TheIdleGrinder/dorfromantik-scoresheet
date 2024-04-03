@@ -39,6 +39,11 @@ namespace doro
                 ?? throw new Exception($"Category '{categoryId}' does not exist in game");
         }
 
+        public bool HasCategory(string categoryId)
+        {
+            return GoalPacks.SelectMany(p => p.Categories).Any(c => c.Id == categoryId);
+        }
+
         public void SetRequiredPack(string packId, bool required)
         {
             _ = GetPack(packId); // Ensure pack exists

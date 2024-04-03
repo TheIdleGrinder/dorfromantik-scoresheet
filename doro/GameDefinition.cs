@@ -31,5 +31,26 @@ namespace doro
             }
             return game;
         }
+
+        public List<GoalPack> GetAllPacks()
+        {
+            return new List<GoalPack> { BaseGoals }.Concat(ExpansionPacks).ToList();
+        }
+
+        public List<string> GetAllCategoryIds()
+        {
+            var categories = BaseGoals.Categories.Select(c => c.Id).ToList();
+            foreach (var pack in ExpansionPacks)
+            {
+                foreach (var category in pack.Categories)
+                {
+                    if (!categories.Contains(category.Id)) // Do this instead of set to guarantee order
+                    {
+                        categories.Add(category.Id);
+                    }
+                }
+            }
+            return categories;
+        }
     }
 }

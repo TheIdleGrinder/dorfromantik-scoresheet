@@ -10,11 +10,11 @@ namespace doro
     {
         public readonly static GameDefinition Dorfromantik = new(
             "doro",
-            "Dorfromantik - Das Brettspiel",
+            "Das Brettspiel",
             GameFactory.GetBaseGoals(),
             [ GameFactory.GetMillGoals(), GameFactory.GetDuelGoals() ]
         );
 
-        public static List<GameDefinition> GetAllGames => [ Dorfromantik ];
+        public static List<GameDefinition> GetAllGames() => [ Dorfromantik ];
     }
 }

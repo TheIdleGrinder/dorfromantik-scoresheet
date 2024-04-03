@@ -6,56 +6,84 @@
 
 <h1>Dorfromantik Punktezähler</h1>
 
-<fieldset id="feature-selector">
-    <legend>Erweiterungen</legend>
-
-    @foreach (var expansion in expansions)
-    {
-        <div>
-            <input type="checkbox" id="expansion-@expansion.Id"
-                   name="@expansion.Id"
-                   checked="@game.HasPack(expansion.Id)"
-                   @onchange="() => ToggleExpansion(expansion.Id)" />
-            <label for="@expansion.Id">@expansion.Name</label>
+<fieldset id="feature-selector-box">
+    <div id="feature-selector">
+        <div id="games">
+            <h4>Spiele</h4>
+            @foreach (var game in Games.GetAllGames())
+            {
+                <div style="width: fit-content">
+                    <input type="radio" id="game-@game.Id" 
+                        checked="@(() => game.Id==Definition.Id)"
+                        @onchange="() => SetGame(game)"/>
+                    <label for="game-@game.Id">@game.Name</label>
+                </div>
+            }
         </div>
-    }
+        <div id="expansions">
+            <h4>Erweiterungen</h4>
+            @foreach (var expansion in Definition.ExpansionPacks)
+            {
+                <div>
+                    <input type="checkbox" id="expansion-@expansion.Id"
+                           name="@expansion.Id"
+                           checked="@Game.HasPack(expansion.Id)"
+                           @onchange="() => ToggleExpansion(expansion.Id)" />
+                    <label for="expansion-@expansion.Id">@expansion.Name</label>
+                </div>
+            }
+        </div>
+    </div>
 </fieldset>
 
-@foreach (string category in game.GetCategories())
+@foreach (string category in Definition.GetAllCategoryIds())
 {
-    <h3>@game.GetCategoryName(category)</h3>
-    @foreach (GoalPack pack in game.GoalPacks.Where(p => p.HasCategory(category)))
+    @if (Game.HasCategory(category))
     {
-        <div class="input-group">
-        <h5>@pack.Name</h5>
-        @foreach (Goal goal in pack.GetCategory(category).Goals)
+        <h3>@Game.GetCategoryName(category)</h3>
+        @foreach (GoalPack pack in Definition.GetAllPacks().Where(p => Game.HasPack(p.Id) && p.HasCategory(category)))
         {
-            string inputId = $"{pack.Id}-{category}-{goal.Id}";
-            <div class="goal-score-input">
-                <label for="@inputId">@goal.Name</label>
-                <input type="number" id="@inputId" 
-                    min="@goal.Minimum" max="@goal.Maximum" step="@goal.Step"
-                    @bind-value="scoreSheet[pack.Id, category, goal.Id]" />
+            <div class="input-group">
+                <h5>@pack.Name</h5>
+                @foreach (Goal goal in pack.GetCategory(category).Goals)
+                {
+                    string inputId = $"{pack.Id}-{category}-{goal.Id}";
+                    <div class="goal-score-input">
+                        <label for="@inputId">@goal.Name</label>
+                        <input type="number" id="@inputId" 
+                        min="@goal.Minimum" max="@goal.Maximum" step="@goal.Step"
+                        @bind-value="Scores[pack.Id, category, goal.Id]" />
+                    </div>
+                }
             </div>
         }
-        </div>
+        <h5>Summe @(Game.GetCategoryName(category)): @Scores.GetCategoryScore(Game, category)</h5>
     }
-    <h5>Summe @(game.GetCategoryName(category)): @scoreSheet.GetCategoryScore(game, category)</h5>
 }
 
 <hr />
 
-@foreach (string category in game.GetCategories())
+@foreach (string category in Game.GetCategories())
 {
-    <h5>@game.GetCategoryName(category): @scoreSheet.GetCategoryScore(game, category)</h5>
+    <h5>@Game.GetCategoryName(category): @Scores.GetCategoryScore(Game, category)</h5>
 }
-<h4>Gesamt: @scoreSheet.GetTotalScore(game)</h4>
+<h4>Gesamt: @Scores.GetTotalScore(Game)</h4>
 
 <style>
-    #feature-selector {
-        margin: 1em;
-        padding: 1em;
+    #feature-selector-box {
+        margin: 0.5em;
+        padding: 0.5em;
         border: 1px solid gray;
+    }
+
+    #feature-selector {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #games, #expansions {
+
     }
 
     label {
@@ -82,25 +110,31 @@
 
 @code
 {
-    private ScoreTable scoreTable = new ScoreTable();
+    private GameConfiguration Game = GameFactory.GetBaseGame();
 
-    private GameConfiguration game = GameFactory.GetBaseGame();
-    private List<GoalPack> expansions = new() { GameFactory.GetMillGoals(), GameFactory.GetDuelGoals() };
+    private GameDefinition Definition = Games.GetAllGames().First();
 
-    private ScoreSheet scoreSheet = new("Spieler");
+    private ScoreSheet Scores = new("Spieler");
+
+    void SetGame(GameDefinition gameDefinition)
+    {
+        Definition = gameDefinition;
+        Game = gameDefinition.GetBaseConfiguration();
+        Scores = new ScoreSheet("Spieler");
+    }
 
     void ToggleExpansion(string expansionId)
     {
-        var expansion = expansions.FirstOrDefault(e => e.Id == expansionId);
+        var expansion = Definition.ExpansionPacks.FirstOrDefault(e => e.Id == expansionId);
         if (expansion != null)
         {
-            if (game.HasPack(expansion.Id))
+            if (Game.HasPack(expansion.Id))
             {
-                game.RemovePack(expansion.Id);
+                Game.RemovePack(expansion.Id);
             }
             else
             {
-                game.AddPack(expansion);
+                Game.AddPack(expansion);
             }
         }
     }
