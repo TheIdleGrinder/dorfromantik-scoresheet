@@ -1,2 +1,2 @@
-# doro-scoresheet
-Virtual score sheet for Dorfromantik
+# Dorfromantik Scoresheet
+Virtual scoresheet for __Dorfromantik - The Boardgame__
