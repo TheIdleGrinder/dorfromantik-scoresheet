@@ -8,10 +8,10 @@ namespace doro
 {
     public static class GameFactory
     {
-        const int UNLIMITED = Int32.MaxValue;
-        const string TASKS = "tasks";
-        const string FLAGS = "flags";
-        const string UNLOCKABLES = "unlockables";
+        public const int UNLIMITED = Int32.MaxValue;
+        public const string TASKS = "tasks";
+        public const string FLAGS = "flags";
+        public const string UNLOCKABLES = "unlockables";
 
         public static GameConfiguration GetBaseGame()
         {

@@ -16,6 +16,8 @@ namespace doro
             [ GameFactory.GetMillGoals(), GameFactory.GetDuelGoals() ]
         );
 
-        public static List<GameDefinition> GetAllGames() => [ Dorfromantik ];
+        public readonly static GameDefinition Duel = GameDefinitions.Duel.GetGame();
+
+        public static List<GameDefinition> GetAllGames() => [ Dorfromantik, Duel ];
     }
 }

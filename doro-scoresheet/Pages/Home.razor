@@ -14,7 +14,7 @@
             {
                 <div style="width: fit-content">
                     <input type="radio" id="game-@game.Id" 
-                        checked="@(() => game.Id==Definition.Id)"
+                        checked="@(game.Id == Definition.Id)"
                         @onchange="() => SetGame(game)"/>
                     <label for="game-@game.Id">@game.Name</label>
                 </div>
@@ -64,7 +64,7 @@
                 }
             </div>
         }
-        <h5>Summe @(Game.GetCategoryName(category)): @String.Join(" - ", Scores.Select(s => s.GetCategoryScore(Game, category)))</h5>
+        <h5>Summe @(Game.GetCategoryName(category)): @String.Join(" : ", Scores.Select(s => s.GetCategoryScore(Game, category)))</h5>
     }
 }
 
@@ -72,9 +72,9 @@
 
 @foreach (string category in Game.GetCategories())
 {
-    <h5>Summe @(Game.GetCategoryName(category)): @String.Join(" - ", Scores.Select(s => s.GetCategoryScore(Game, category)))</h5>
+    <h5>Summe @(Game.GetCategoryName(category)): @String.Join(" : ", Scores.Select(s => s.GetCategoryScore(Game, category)))</h5>
 }
-<h4>Gesamt: @String.Join(" - ", Scores.Select(s => s.GetTotalScore(Game)))</h4>
+<h4>Gesamt: @String.Join(" : ", Scores.Select(s => s.GetTotalScore(Game)))</h4>
 
 <style>
     #feature-selector-box {
@@ -108,10 +108,15 @@
 
     input.redPlayer {
         background-color: lightcoral;
+        border: 1px solid darkred;
+        border-radius: 3px;
     }
 
     input.bluePlayer {
+        margin-top: 2px;
         background-color: lightblue;
+        border: 1px solid darkblue;
+        border-radius: 3px;
     }
 
     div.input-group {
@@ -122,8 +127,8 @@
     }
 
     div.goal-score-input {
-        margin-top: 1px;
-        margin-bottom: 1px;
+        margin-top: 2px;
+        margin-bottom: 2px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
