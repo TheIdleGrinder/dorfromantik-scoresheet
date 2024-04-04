@@ -17,7 +17,7 @@ namespace doro.GameDefinitions
         {
             return new GameDefinition(
                 "doro",
-                "Das Brettspiel",
+                Localization.Doro.Dorfromantik_BaseGame,
                 1,
                 GetBaseGoals(),
                 [ GetMillGoals(), GetDuelGoals() ]
@@ -26,7 +26,7 @@ namespace doro.GameDefinitions
 
         public static GoalPack GetBaseGoals()
         {
-            var baseGoals = new GoalPack("base", "Basis");
+            var baseGoals = new GoalPack("base", Localization.Doro.BasePack);
             baseGoals.Categories.Add(GetBaseTasks());
             baseGoals.Categories.Add(GetBaseFlags());
             baseGoals.Categories.Add(GetBaseUnlockables());
@@ -35,51 +35,51 @@ namespace doro.GameDefinitions
 
         private static GoalCategory GetBaseTasks()
         {
-            var baseTasks = new GoalCategory(TASKS, "Aufträge");
-            baseTasks.Goals.Add(new Goal("forest", "Wald", 37));
-            baseTasks.Goals.Add(new Goal("wheat", "Getreide", 37));
-            baseTasks.Goals.Add(new Goal("village", "Dorf", 37));
-            baseTasks.Goals.Add(new Goal("rails", "Schiene", 30));
-            baseTasks.Goals.Add(new Goal("river", "Fluss", 30));
+            var baseTasks = new GoalCategory(TASKS, Localization.Doro.Tasks);
+            baseTasks.Goals.Add(new Goal("forest", Localization.Doro.Forest, 37));
+            baseTasks.Goals.Add(new Goal("grain", Localization.Doro.Grain, 37));
+            baseTasks.Goals.Add(new Goal("village", Localization.Doro.Village, 37));
+            baseTasks.Goals.Add(new Goal("track", Localization.Doro.Track, 30));
+            baseTasks.Goals.Add(new Goal("stream", Localization.Doro.Stream, 30));
             return baseTasks;
         }
 
         private static GoalCategory GetBaseFlags()
         {
-            var baseFlags = new GoalCategory(FLAGS, "Flaggen");
-            baseFlags.Goals.Add(new Goal("forest", "Wald"));
-            baseFlags.Goals.Add(new Goal("wheat", "Getreide"));
-            baseFlags.Goals.Add(new Goal("village", "Dorf"));
-            baseFlags.Goals.Add(new Goal("rails", "Schiene"));
-            baseFlags.Goals.Add(new Goal("river", "Fluss"));
+            var baseFlags = new GoalCategory(FLAGS, Localization.Doro.Flags);
+            baseFlags.Goals.Add(new Goal("forest", Localization.Doro.Forest));
+            baseFlags.Goals.Add(new Goal("grain", Localization.Doro.Grain));
+            baseFlags.Goals.Add(new Goal("village", Localization.Doro.Village));
+            baseFlags.Goals.Add(new Goal("track", Localization.Doro.Track));
+            baseFlags.Goals.Add(new Goal("stream", Localization.Doro.Stream));
             return baseFlags;
         }
 
         private static GoalCategory GetBaseUnlockables()
         {
-            var baseUnlockables = new GoalCategory(UNLOCKABLES, "Freigespielt");
-            baseUnlockables.Goals.Add(new Goal("redHearts", "Rote Herzen", UNLIMITED, 1, "1/passende Kante"));
-            baseUnlockables.Goals.Add(new Goal("circus", "Zirkus", 10, 10, "Umschlossen = 10"));
-            baseUnlockables.Goals.Add(new Goal("signalman", "Bahnwärter", UNLIMITED, 2, "2/Bahnübergang"));
-            baseUnlockables.Goals.Add(new Goal("shepherdess", "Schäferin", UNLIMITED, 1, "1/Schaf"));
-            baseUnlockables.Goals.Add(new Goal("hill", "Hügel", UNLIMITED, 2, "im Abstand 2 = 2/Auftrag"));
-            baseUnlockables.Goals.Add(new Goal("construction", "Baustelle", 21, 7, "pro Gebiet 7+ = 7"));
-            baseUnlockables.Goals.Add(new Goal("balloon", "Ballon-Startplatz", UNLIMITED, 2, "2/Entfernung"));
-            baseUnlockables.Goals.Add(new Goal("goldenHeart", "Goldenes Herz", 12, 2, "2/passende Kante"));
-            baseUnlockables.Goals.Add(new Goal("forestHut", "Waldhütte", UNLIMITED, 1, "Wald-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("harvestFestival", "Erntefest", UNLIMITED, 1, "Getreide-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("guardTower", "Wachturm", UNLIMITED, 1, "Stadt-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("locomotive", "Lokomotive", UNLIMITED, 1, "Schienen-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("riverboat", "Schiff", UNLIMITED, 1, "Fluss-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("trainstation", "Bahnhof", UNLIMITED, 2, "beendet = 1/Plättchen"));
-            baseUnlockables.Goals.Add(new Goal("harbor", "Hafen", UNLIMITED, 2, "beendet = 1/Plättchen"));
+            var baseUnlockables = new GoalCategory(UNLOCKABLES, Localization.Doro.Unlockables);
+            baseUnlockables.Goals.Add(new Goal("redHearts", Localization.Doro.RedHearts, UNLIMITED, 1, "1/passende Kante"));
+            baseUnlockables.Goals.Add(new Goal("circus", Localization.Doro.Circus, 10, 10, "Umschlossen = 10"));
+            baseUnlockables.Goals.Add(new Goal("signalman", Localization.Doro.Signalman, UNLIMITED, 2, "2/Bahnübergang"));
+            baseUnlockables.Goals.Add(new Goal("shepherdess", Localization.Doro.Shepherdess, UNLIMITED, 1, "1/Schaf"));
+            baseUnlockables.Goals.Add(new Goal("hill", Localization.Doro.Hill, UNLIMITED, 2, "im Abstand 2 = 2/Auftrag"));
+            baseUnlockables.Goals.Add(new Goal("construction", Localization.Doro.Construction, 21, 7, "pro Gebiet 7+ = 7"));
+            baseUnlockables.Goals.Add(new Goal("balloon", Localization.Doro.Balloon, UNLIMITED, 2, "2/Entfernung"));
+            baseUnlockables.Goals.Add(new Goal("goldenHeart", Localization.Doro.GoldenHeart, 12, 2, "2/passende Kante"));
+            baseUnlockables.Goals.Add(new Goal("forestCabin", Localization.Doro.ForestCabin, UNLIMITED, 1, "Wald-Aufträge"));
+            baseUnlockables.Goals.Add(new Goal("harvestFestival", Localization.Doro.HarvestFestival, UNLIMITED, 1, "Getreide-Aufträge"));
+            baseUnlockables.Goals.Add(new Goal("watchtower", Localization.Doro.Watchtower, UNLIMITED, 1, "Stadt-Aufträge"));
+            baseUnlockables.Goals.Add(new Goal("locomotive", Localization.Doro.Locomotive, UNLIMITED, 1, "Schienen-Aufträge"));
+            baseUnlockables.Goals.Add(new Goal("ship", Localization.Doro.Ship, UNLIMITED, 1, "Fluss-Aufträge"));
+            baseUnlockables.Goals.Add(new Goal("trainStation", Localization.Doro.Trainstation, UNLIMITED, 2, "beendet = 1/Plättchen"));
+            baseUnlockables.Goals.Add(new Goal("harbor", Localization.Doro.Harbor, UNLIMITED, 2, "beendet = 1/Plättchen"));
             return baseUnlockables;
         }
 
         public static GoalPack GetMillGoals()
         {
             var millGoals = new GoalPack("mill", "Große Mühle");
-            var millUnlockables = new GoalCategory(UNLOCKABLES, "Freigespielt");
+            var millUnlockables = new GoalCategory(UNLOCKABLES, Localization.Doro.Unlockables);
             millUnlockables.Goals.Add(new Goal("mill", "Große Mühle", UNLIMITED, 2, "abgeschlossen = 2/Auftrag + 2/Fahne"));
             millGoals.Categories.Add(millUnlockables);
             return millGoals;
