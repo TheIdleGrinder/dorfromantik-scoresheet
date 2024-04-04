@@ -87,16 +87,16 @@ namespace doro.GameDefinitions
 
         public static GoalPack GetDuelGoals()
         {
-            var duelGoals = new GoalPack("duel", "Das Duell");
-            var duelTasks = new GoalCategory(TASKS, "Aufträge");
-            duelTasks.Goals.Add(new Goal("double", "Doppel", 18));
-            duelTasks.Goals.Add(new Goal("surround", "Rundum", 18));
+            var duelGoals = new GoalPack("duel", Localization.Duel.Dorfromantik_Duel);
+            var duelTasks = new GoalCategory(TASKS, Localization.Doro.Tasks);
+            duelTasks.Goals.Add(new Goal("double", Localization.Duel.Double, 18));
+            duelTasks.Goals.Add(new Goal("surround", Localization.Duel.Wraparound, 18));
             duelGoals.Categories.Add(duelTasks);
-            var duelUnlockables = new GoalCategory(UNLOCKABLES, "Freigespielt");
-            duelUnlockables.Goals.Add(new Goal("photo", "Fotograf", UNLIMITED, 1, "1/Kameramarker"));
-            duelUnlockables.Goals.Add(new Goal("school", "Schule", UNLIMITED, 1, "im Abstand 2 = 1/Stadtplättchen"));
-            duelUnlockables.Goals.Add(new Goal("granary", "Kornspeicher", UNLIMITED, 1, "im Abstand 2 = 1/Getreideplättchen"));
-            duelUnlockables.Goals.Add(new Goal("oak", "Alte Eiche", UNLIMITED, 1, "im Abstand 2 = 1/Waldplättchen"));
+            var duelUnlockables = new GoalCategory(UNLOCKABLES, Localization.Doro.Unlockables);
+            duelUnlockables.Goals.Add(new Goal("photo", Localization.Duel.Photographer, UNLIMITED, 1, "1/Kameramarker"));
+            duelUnlockables.Goals.Add(new Goal("oak", Localization.Duel.OldOak, UNLIMITED, 1, "im Abstand 2 = 1/Waldplättchen"));
+            duelUnlockables.Goals.Add(new Goal("granary", Localization.Duel.Granary, UNLIMITED, 1, "im Abstand 2 = 1/Getreideplättchen"));
+            duelUnlockables.Goals.Add(new Goal("school", Localization.Duel.School, UNLIMITED, 1, "im Abstand 2 = 1/Stadtplättchen"));
             duelGoals.Categories.Add(duelUnlockables);
             return duelGoals;
         }

@@ -18,6 +18,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Doro.resx</DependentUpon>
     </Compile>
+    <Compile Update="Localization\Duel.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Duel.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +33,10 @@
     <EmbeddedResource Update="Localization\Doro.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Doro.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Duel.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Duel.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

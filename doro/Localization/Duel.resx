@@ -117,85 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Balloon" xml:space="preserve">
-    <value>Balloon Launch Site</value>
+  <data name="Dorfromantik_Duel" xml:space="preserve">
+    <value>The Duel</value>
   </data>
-  <data name="BasePack" xml:space="preserve">
-    <value>Base</value>
+  <data name="Double" xml:space="preserve">
+    <value>Double</value>
   </data>
-  <data name="Circus" xml:space="preserve">
-    <value>Circus</value>
+  <data name="FieldMaster" xml:space="preserve">
+    <value>Field Master</value>
   </data>
-  <data name="Construction" xml:space="preserve">
-    <value>Construction Site</value>
+  <data name="ForestMaster" xml:space="preserve">
+    <value>Forest Master</value>
   </data>
-  <data name="Dorfromantik_BaseGame" xml:space="preserve">
-    <value>The Board Game</value>
+  <data name="Granary" xml:space="preserve">
+    <value>Granary</value>
   </data>
-  <data name="Flags" xml:space="preserve">
-    <value>Flags</value>
+  <data name="Hearts" xml:space="preserve">
+    <value>Hearts</value>
   </data>
-  <data name="Forest" xml:space="preserve">
-    <value>Forest</value>
+  <data name="LargeField" xml:space="preserve">
+    <value>Large Field</value>
   </data>
-  <data name="ForestCabin" xml:space="preserve">
-    <value>Forest Cabin</value>
+  <data name="LargeForest" xml:space="preserve">
+    <value>Large Forest</value>
   </data>
-  <data name="GoldenHeart" xml:space="preserve">
-    <value>Golden Heart</value>
+  <data name="LargeVillage" xml:space="preserve">
+    <value>Large Village</value>
   </data>
-  <data name="Grain" xml:space="preserve">
-    <value>Grain</value>
+  <data name="ManyFields" xml:space="preserve">
+    <value>Many Fields</value>
   </data>
-  <data name="Harbor" xml:space="preserve">
-    <value>Harbor</value>
+  <data name="ManyForests" xml:space="preserve">
+    <value>Many Forests</value>
   </data>
-  <data name="HarvestFestival" xml:space="preserve">
-    <value>Harvest Festival</value>
+  <data name="ManyVillages" xml:space="preserve">
+    <value>Many Villages</value>
   </data>
-  <data name="Hill" xml:space="preserve">
-    <value>Hill</value>
+  <data name="Modul1" xml:space="preserve">
+    <value>Modul 1</value>
   </data>
-  <data name="Locomotive" xml:space="preserve">
-    <value>Locomotive</value>
+  <data name="Modul2" xml:space="preserve">
+    <value>Modul 2</value>
   </data>
-  <data name="LongestStream" xml:space="preserve">
-    <value>Longest Stream</value>
+  <data name="OldOak" xml:space="preserve">
+    <value>Old Oak</value>
   </data>
-  <data name="LongestTrack" xml:space="preserve">
-    <value>Longest Track</value>
+  <data name="Photographer" xml:space="preserve">
+    <value>Photographer</value>
   </data>
-  <data name="RedHearts" xml:space="preserve">
-    <value>Red Hearts</value>
+  <data name="School" xml:space="preserve">
+    <value>School</value>
   </data>
-  <data name="Shepherdess" xml:space="preserve">
-    <value>Shepherdess</value>
+  <data name="VillageMaster" xml:space="preserve">
+    <value>Village Master</value>
   </data>
-  <data name="Ship" xml:space="preserve">
-    <value>Ship</value>
-  </data>
-  <data name="Signalman" xml:space="preserve">
-    <value>Signalman</value>
-  </data>
-  <data name="Stream" xml:space="preserve">
-    <value>Stream</value>
-  </data>
-  <data name="Tasks" xml:space="preserve">
-    <value>Tasks</value>
-  </data>
-  <data name="Track" xml:space="preserve">
-    <value>Track</value>
-  </data>
-  <data name="Trainstation" xml:space="preserve">
-    <value>Trainstation</value>
-  </data>
-  <data name="Unlockables" xml:space="preserve">
-    <value>Unlocked</value>
-  </data>
-  <data name="Village" xml:space="preserve">
-    <value>Village</value>
-  </data>
-  <data name="Watchtower" xml:space="preserve">
-    <value>Watchtower</value>
+  <data name="Wraparound" xml:space="preserve">
+    <value>Wraparound</value>
   </data>
 </root>

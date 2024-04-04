@@ -12,7 +12,7 @@ namespace doro.GameDefinitions
         {
             return new GameDefinition(
                 "duel",
-                "Das Duell",
+                Localization.Duel.Dorfromantik_Duel,
                 2,
                 GetBaseGoals(),
                 [ GetModule1(), GetModule2() ]
@@ -21,7 +21,7 @@ namespace doro.GameDefinitions
 
         private static GoalPack GetBaseGoals()
         {
-            var baseGoals = new GoalPack("duelBase", "Basis");
+            var baseGoals = new GoalPack("duelBase", Localization.Doro.BasePack);
             baseGoals.Categories.Add(GetBaseTasks());
             baseGoals.Categories.Add(GetBaseFlags());
             return baseGoals;
@@ -29,54 +29,54 @@ namespace doro.GameDefinitions
 
         private static GoalCategory GetBaseTasks()
         {
-            var baseTasks = new GoalCategory("tasks", "Aufträge");
-            baseTasks.Goals.Add(new Goal("forest", "Wald", 18));
-            baseTasks.Goals.Add(new Goal("wheat", "Getreide", 18));
-            baseTasks.Goals.Add(new Goal("village", "Dorf", 18));
-            baseTasks.Goals.Add(new Goal("rails", "Schiene", 18));
-            baseTasks.Goals.Add(new Goal("river", "Fluss", 18));
-            baseTasks.Goals.Add(new Goal("surround", "Rundum", 18));
-            baseTasks.Goals.Add(new Goal("double", "Doppel", 18, 6));
+            var baseTasks = new GoalCategory("tasks", Localization.Doro.Tasks);
+            baseTasks.Goals.Add(new Goal("forest", Localization.Doro.Forest, 18));
+            baseTasks.Goals.Add(new Goal("grain", Localization.Doro.Grain, 18));
+            baseTasks.Goals.Add(new Goal("village", Localization.Doro.Village, 18));
+            baseTasks.Goals.Add(new Goal("track", Localization.Doro.Track, 18));
+            baseTasks.Goals.Add(new Goal("stream", Localization.Doro.Stream, 18));
+            baseTasks.Goals.Add(new Goal("wraparound", Localization.Duel.Wraparound, 18));
+            baseTasks.Goals.Add(new Goal("double", Localization.Duel.Double, 18, 6));
             return baseTasks;
         }
 
         private static GoalCategory GetBaseFlags()
         {
-            var baseFlags = new GoalCategory("flags", "Flaggen");
-            baseFlags.Goals.Add(new Goal("forest", "Wald"));
-            baseFlags.Goals.Add(new Goal("wheat", "Getreide"));
-            baseFlags.Goals.Add(new Goal("village", "Dorf"));
-            baseFlags.Goals.Add(new Goal("rails", "Längste Schiene"));
-            baseFlags.Goals.Add(new Goal("river", "Längster Fluss"));
+            var baseFlags = new GoalCategory("flags", Localization.Doro.Flags);
+            baseFlags.Goals.Add(new Goal("forest", Localization.Doro.Forest));
+            baseFlags.Goals.Add(new Goal("grain", Localization.Doro.Grain));
+            baseFlags.Goals.Add(new Goal("village", Localization.Doro.Village));
+            baseFlags.Goals.Add(new Goal("track", Localization.Doro.LongestTrack));
+            baseFlags.Goals.Add(new Goal("stream", Localization.Doro.LongestStream));
             return baseFlags;
         }
 
         private static GoalPack GetModule1()
         {
-            var module1 = new GoalPack("duelModule1", "Modul 1");
-            var category = new GoalCategory("module1", "Modul 1");
-            category.Goals.Add(new Goal("largeForest", "Großer Wald", 8, 2));
-            category.Goals.Add(new Goal("forestMaster", "Wälderflut", 8, 2));
-            category.Goals.Add(new Goal("manyForests", "Viele Wälder", 15));
-            category.Goals.Add(new Goal("largeField", "Großes Feld", 8, 2));
-            category.Goals.Add(new Goal("fieldMaster", "Felderflut", 8, 2));
-            category.Goals.Add(new Goal("manyFields", "Viele Felder", 15));
-            category.Goals.Add(new Goal("largeVillage", "Großes Dorf", 8, 2));
-            category.Goals.Add(new Goal("villageMaster", "Dörferflut", 8, 2));
-            category.Goals.Add(new Goal("manyVillages", "Viele Dörfer", 15));
+            var module1 = new GoalPack("duelModule1", Localization.Duel.Modul1);
+            var category = new GoalCategory("module1", Localization.Duel.Modul1);
+            category.Goals.Add(new Goal("largeForest", Localization.Duel.LargeForest, 8, 2));
+            category.Goals.Add(new Goal("forestMaster", Localization.Duel.ForestMaster, 8, 2));
+            category.Goals.Add(new Goal("manyForests", Localization.Duel.ManyForests, 15));
+            category.Goals.Add(new Goal("largeField", Localization.Duel.LargeField, 8, 2));
+            category.Goals.Add(new Goal("fieldMaster", Localization.Duel.FieldMaster, 8, 2));
+            category.Goals.Add(new Goal("manyFields", Localization.Duel.ManyFields, 15));
+            category.Goals.Add(new Goal("largeVillage", Localization.Duel.LargeVillage, 8, 2));
+            category.Goals.Add(new Goal("villageMaster", Localization.Duel.VillageMaster, 8, 2));
+            category.Goals.Add(new Goal("manyVillages", Localization.Duel.ManyVillages, 15));
             module1.Categories.Add(category);
             return module1;
         }
 
         private static GoalPack GetModule2()
         {
-            var module2 = new GoalPack("duelModule2", "Modul 2");
-            var category = new GoalCategory("module2", "Modul 2");
-            category.Goals.Add(new Goal("hearts", "Herzen"));
-            category.Goals.Add(new Goal("photographer", "Der Fotograf", 18));
-            category.Goals.Add(new Goal("oak", "Alte Eiche", 18));
-            category.Goals.Add(new Goal("granary", "Kornspeicher", 18));
-            category.Goals.Add(new Goal("school", "Schule", 18));
+            var module2 = new GoalPack("duelModule2", Localization.Duel.Modul2);
+            var category = new GoalCategory("module2", Localization.Duel.Modul2);
+            category.Goals.Add(new Goal("hearts", Localization.Duel.Hearts));
+            category.Goals.Add(new Goal("photographer", Localization.Duel.Photographer, 18));
+            category.Goals.Add(new Goal("oak", Localization.Duel.OldOak, 18));
+            category.Goals.Add(new Goal("granary", Localization.Duel.Granary, 18));
+            category.Goals.Add(new Goal("school", Localization.Duel.School, 18));
             module2.Categories.Add(category);
             return module2;
         }

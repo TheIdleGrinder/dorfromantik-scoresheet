@@ -187,6 +187,24 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Longest Stream ähnelt.
+        /// </summary>
+        internal static string LongestStream {
+            get {
+                return ResourceManager.GetString("LongestStream", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Longest Track ähnelt.
+        /// </summary>
+        internal static string LongestTrack {
+            get {
+                return ResourceManager.GetString("LongestTrack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Red Hearts ähnelt.
         /// </summary>
         internal static string RedHearts {
