@@ -132,6 +132,9 @@
   <data name="Granary" xml:space="preserve">
     <value>Granary</value>
   </data>
+  <data name="Granary_Descr" xml:space="preserve">
+    <value>at distance 2 = 1/Grain tile</value>
+  </data>
   <data name="Hearts" xml:space="preserve">
     <value>Hearts</value>
   </data>
@@ -162,11 +165,20 @@
   <data name="OldOak" xml:space="preserve">
     <value>Old Oak</value>
   </data>
+  <data name="OldOak_Descr" xml:space="preserve">
+    <value>at distance 2 = 1/Forest tile</value>
+  </data>
   <data name="Photographer" xml:space="preserve">
     <value>Photographer</value>
   </data>
+  <data name="Photographer_Descr" xml:space="preserve">
+    <value>1/Camera marker</value>
+  </data>
   <data name="School" xml:space="preserve">
     <value>School</value>
+  </data>
+  <data name="School_Descr" xml:space="preserve">
+    <value>at distance 2 = 1/Village tile</value>
   </data>
   <data name="VillageMaster" xml:space="preserve">
     <value>Village Master</value>

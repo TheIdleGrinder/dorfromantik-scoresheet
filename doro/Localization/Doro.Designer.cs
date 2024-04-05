@@ -70,6 +70,15 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 2/distance ähnelt.
+        /// </summary>
+        internal static string Balloon_Descr {
+            get {
+                return ResourceManager.GetString("Balloon_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Base ähnelt.
         /// </summary>
         internal static string BasePack {
@@ -88,11 +97,29 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die completely surrounded = 10 ähnelt.
+        /// </summary>
+        internal static string Circus_Descr {
+            get {
+                return ResourceManager.GetString("Circus_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Construction Site ähnelt.
         /// </summary>
         internal static string Construction {
             get {
                 return ResourceManager.GetString("Construction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die per territory 7+ = 7 ähnelt.
+        /// </summary>
+        internal static string Construction_Descr {
+            get {
+                return ResourceManager.GetString("Construction_Descr", resourceCulture);
             }
         }
         
@@ -133,11 +160,29 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Forest-Tasks ähnelt.
+        /// </summary>
+        internal static string ForestCabin_Descr {
+            get {
+                return ResourceManager.GetString("ForestCabin_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Golden Heart ähnelt.
         /// </summary>
         internal static string GoldenHeart {
             get {
                 return ResourceManager.GetString("GoldenHeart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 2/matching edge ähnelt.
+        /// </summary>
+        internal static string GoldenHeart_Descr {
+            get {
+                return ResourceManager.GetString("GoldenHeart_Descr", resourceCulture);
             }
         }
         
@@ -160,11 +205,29 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die closed off = 1/tile ähnelt.
+        /// </summary>
+        internal static string Harbor_Descr {
+            get {
+                return ResourceManager.GetString("Harbor_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Harvest Festival ähnelt.
         /// </summary>
         internal static string HarvestFestival {
             get {
                 return ResourceManager.GetString("HarvestFestival", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Grain-Tasks ähnelt.
+        /// </summary>
+        internal static string HarvestFestival_Descr {
+            get {
+                return ResourceManager.GetString("HarvestFestival_Descr", resourceCulture);
             }
         }
         
@@ -178,11 +241,29 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die at distance 2 = 2/Task tile ähnelt.
+        /// </summary>
+        internal static string Hill_Descr {
+            get {
+                return ResourceManager.GetString("Hill_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Locomotive ähnelt.
         /// </summary>
         internal static string Locomotive {
             get {
                 return ResourceManager.GetString("Locomotive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Track-Tasks ähnelt.
+        /// </summary>
+        internal static string Locomotive_Descr {
+            get {
+                return ResourceManager.GetString("Locomotive_Descr", resourceCulture);
             }
         }
         
@@ -214,11 +295,29 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die at distance 2 = 2/Task + 2/Flag ähnelt.
+        /// </summary>
+        internal static string Mill_Descr {
+            get {
+                return ResourceManager.GetString("Mill_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Red Hearts ähnelt.
         /// </summary>
         internal static string RedHearts {
             get {
                 return ResourceManager.GetString("RedHearts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 1/matching edge ähnelt.
+        /// </summary>
+        internal static string RedHearts_Descr {
+            get {
+                return ResourceManager.GetString("RedHearts_Descr", resourceCulture);
             }
         }
         
@@ -232,6 +331,15 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 1/Sheep ähnelt.
+        /// </summary>
+        internal static string Shepherdess_Descr {
+            get {
+                return ResourceManager.GetString("Shepherdess_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Ship ähnelt.
         /// </summary>
         internal static string Ship {
@@ -241,11 +349,29 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Stream-Tasks ähnelt.
+        /// </summary>
+        internal static string Ship_Descr {
+            get {
+                return ResourceManager.GetString("Ship_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Signalman ähnelt.
         /// </summary>
         internal static string Signalman {
             get {
                 return ResourceManager.GetString("Signalman", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 2/Grade Crossing ähnelt.
+        /// </summary>
+        internal static string Signalman_Descr {
+            get {
+                return ResourceManager.GetString("Signalman_Descr", resourceCulture);
             }
         }
         
@@ -277,11 +403,20 @@ namespace doro.Localization {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Trainstation ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Train Station ähnelt.
         /// </summary>
         internal static string Trainstation {
             get {
                 return ResourceManager.GetString("Trainstation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die closed off = 1/tile ähnelt.
+        /// </summary>
+        internal static string Trainstation_Descr {
+            get {
+                return ResourceManager.GetString("Trainstation_Descr", resourceCulture);
             }
         }
         
@@ -309,6 +444,15 @@ namespace doro.Localization {
         internal static string Watchtower {
             get {
                 return ResourceManager.GetString("Watchtower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Village-Tasks ähnelt.
+        /// </summary>
+        internal static string Watchtower_Descr {
+            get {
+                return ResourceManager.GetString("Watchtower_Descr", resourceCulture);
             }
         }
     }

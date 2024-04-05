@@ -72,11 +72,11 @@ namespace doro.GameDefinitions
         {
             var module2 = new GoalPack("duelModule2", Localization.Duel.Module2);
             var category = new GoalCategory("module2", Localization.Duel.Module2);
-            category.Goals.Add(new Goal("hearts", Localization.Duel.Hearts));
-            category.Goals.Add(new Goal("photographer", Localization.Duel.Photographer, 18));
-            category.Goals.Add(new Goal("oak", Localization.Duel.OldOak, 18));
-            category.Goals.Add(new Goal("granary", Localization.Duel.Granary, 18));
-            category.Goals.Add(new Goal("school", Localization.Duel.School, 18));
+            category.Goals.Add(new Goal("hearts", Localization.Duel.Hearts, Doro.UNLIMITED, 1, Localization.Doro.RedHearts));
+            category.Goals.Add(new Goal("photographer", Localization.Duel.Photographer, 18, 1, Localization.Duel.Photographer_Descr));
+            category.Goals.Add(new Goal("oak", Localization.Duel.OldOak, 18, 1, Localization.Duel.OldOak_Descr));
+            category.Goals.Add(new Goal("granary", Localization.Duel.Granary, 18, 1, Localization.Duel.Granary_Descr));
+            category.Goals.Add(new Goal("school", Localization.Duel.School, 18, 1, Localization.Duel.School_Descr));
             module2.Categories.Add(category);
             return module2;
         }

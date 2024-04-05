@@ -174,4 +174,16 @@
   <data name="Wraparound" xml:space="preserve">
     <value>Rundum</value>
   </data>
+  <data name="Photographer_Descr" xml:space="preserve">
+    <value>1/Kameraplättchen</value>
+  </data>
+  <data name="School_Descr" xml:space="preserve">
+    <value>im Abstand 2 = 1/Dorfplättchen</value>
+  </data>
+  <data name="Granary_Descr" xml:space="preserve">
+    <value>im Abstand 2 = 1/Getreideplättchen</value>
+  </data>
+  <data name="OldOak_Descr" xml:space="preserve">
+    <value>im Abstand 2 = 1/Waldplättchen</value>
+  </data>
 </root>

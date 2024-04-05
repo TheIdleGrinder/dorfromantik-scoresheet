@@ -187,7 +187,7 @@
     <value>Track</value>
   </data>
   <data name="Trainstation" xml:space="preserve">
-    <value>Trainstation</value>
+    <value>Train Station</value>
   </data>
   <data name="Unlockables" xml:space="preserve">
     <value>Unlocked</value>
@@ -200,5 +200,53 @@
   </data>
   <data name="Mill" xml:space="preserve">
     <value>Great Mill</value>
+  </data>
+  <data name="Balloon_Descr" xml:space="preserve">
+    <value>2/distance</value>
+  </data>
+  <data name="Circus_Descr" xml:space="preserve">
+    <value>completely surrounded = 10</value>
+  </data>
+  <data name="Construction_Descr" xml:space="preserve">
+    <value>per territory 7+ = 7</value>
+  </data>
+  <data name="ForestCabin_Descr" xml:space="preserve">
+    <value>Forest-Tasks</value>
+  </data>
+  <data name="GoldenHeart_Descr" xml:space="preserve">
+    <value>2/matching edge</value>
+  </data>
+  <data name="Harbor_Descr" xml:space="preserve">
+    <value>closed off = 1/tile</value>
+  </data>
+  <data name="HarvestFestival_Descr" xml:space="preserve">
+    <value>Grain-Tasks</value>
+  </data>
+  <data name="Hill_Descr" xml:space="preserve">
+    <value>at distance 2 = 2/Task tile</value>
+  </data>
+  <data name="Locomotive_Descr" xml:space="preserve">
+    <value>Track-Tasks</value>
+  </data>
+  <data name="RedHearts_Descr" xml:space="preserve">
+    <value>1/matching edge</value>
+  </data>
+  <data name="Shepherdess_Descr" xml:space="preserve">
+    <value>1/Sheep</value>
+  </data>
+  <data name="Ship_Descr" xml:space="preserve">
+    <value>Stream-Tasks</value>
+  </data>
+  <data name="Signalman_Descr" xml:space="preserve">
+    <value>2/Grade Crossing</value>
+  </data>
+  <data name="Trainstation_Descr" xml:space="preserve">
+    <value>closed off = 1/tile</value>
+  </data>
+  <data name="Watchtower_Descr" xml:space="preserve">
+    <value>Village-Tasks</value>
+  </data>
+  <data name="Mill_Descr" xml:space="preserve">
+    <value>at distance 2 = 2/Task + 2/Flag</value>
   </data>
 </root>

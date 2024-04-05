@@ -201,4 +201,52 @@
   <data name="Mill" xml:space="preserve">
     <value>Große Mühle</value>
   </data>
+  <data name="Balloon_Descr" xml:space="preserve">
+    <value>2/Entfernung</value>
+  </data>
+  <data name="Circus_Descr" xml:space="preserve">
+    <value>umschlossen = 10</value>
+  </data>
+  <data name="Construction_Descr" xml:space="preserve">
+    <value>pro Gebiet 7+ = 7</value>
+  </data>
+  <data name="ForestCabin_Descr" xml:space="preserve">
+    <value>Wald-Aufträge</value>
+  </data>
+  <data name="GoldenHeart_Descr" xml:space="preserve">
+    <value>2/passende Kante</value>
+  </data>
+  <data name="Harbor_Descr" xml:space="preserve">
+    <value>beendet = 1/Plättchen</value>
+  </data>
+  <data name="HarvestFestival_Descr" xml:space="preserve">
+    <value>Getreide-Aufträge</value>
+  </data>
+  <data name="Hill_Descr" xml:space="preserve">
+    <value>im Abstand 2 = 2/Auftrag</value>
+  </data>
+  <data name="Locomotive_Descr" xml:space="preserve">
+    <value>Schienen-Aufträge</value>
+  </data>
+  <data name="RedHearts_Descr" xml:space="preserve">
+    <value>1/passende Kante</value>
+  </data>
+  <data name="Shepherdess_Descr" xml:space="preserve">
+    <value>1/Schaf</value>
+  </data>
+  <data name="Ship_Descr" xml:space="preserve">
+    <value>Fluss-Aufträge</value>
+  </data>
+  <data name="Signalman_Descr" xml:space="preserve">
+    <value>2/Bahnübergang</value>
+  </data>
+  <data name="Trainstation_Descr" xml:space="preserve">
+    <value>beendet = 1/Plättchen</value>
+  </data>
+  <data name="Watchtower_Descr" xml:space="preserve">
+    <value>Dorf-Aufträge</value>
+  </data>
+  <data name="Mill_Descr" xml:space="preserve">
+    <value>im Abstand 2 = 2/Auftrag + 2/Fahne</value>
+  </data>
 </root>

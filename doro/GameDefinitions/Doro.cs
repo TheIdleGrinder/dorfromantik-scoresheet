@@ -11,7 +11,7 @@ namespace doro.GameDefinitions
         const string TASKS = "tasks";
         const string FLAGS = "flags";
         const string UNLOCKABLES = "unlockables";
-        const int UNLIMITED = Int32.MaxValue;
+        public const int UNLIMITED = Int32.MaxValue;
 
         public static GameDefinition GetGame()
         {
@@ -58,21 +58,21 @@ namespace doro.GameDefinitions
         private static GoalCategory GetBaseUnlockables()
         {
             var baseUnlockables = new GoalCategory(UNLOCKABLES, Localization.Doro.Unlockables);
-            baseUnlockables.Goals.Add(new Goal("redHearts", Localization.Doro.RedHearts, UNLIMITED, 1, "1/passende Kante"));
-            baseUnlockables.Goals.Add(new Goal("circus", Localization.Doro.Circus, 10, 10, "Umschlossen = 10"));
-            baseUnlockables.Goals.Add(new Goal("signalman", Localization.Doro.Signalman, UNLIMITED, 2, "2/Bahnübergang"));
-            baseUnlockables.Goals.Add(new Goal("shepherdess", Localization.Doro.Shepherdess, UNLIMITED, 1, "1/Schaf"));
-            baseUnlockables.Goals.Add(new Goal("hill", Localization.Doro.Hill, UNLIMITED, 2, "im Abstand 2 = 2/Auftrag"));
-            baseUnlockables.Goals.Add(new Goal("construction", Localization.Doro.Construction, 21, 7, "pro Gebiet 7+ = 7"));
-            baseUnlockables.Goals.Add(new Goal("balloon", Localization.Doro.Balloon, UNLIMITED, 2, "2/Entfernung"));
-            baseUnlockables.Goals.Add(new Goal("goldenHeart", Localization.Doro.GoldenHeart, 12, 2, "2/passende Kante"));
-            baseUnlockables.Goals.Add(new Goal("forestCabin", Localization.Doro.ForestCabin, UNLIMITED, 1, "Wald-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("harvestFestival", Localization.Doro.HarvestFestival, UNLIMITED, 1, "Getreide-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("watchtower", Localization.Doro.Watchtower, UNLIMITED, 1, "Stadt-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("locomotive", Localization.Doro.Locomotive, UNLIMITED, 1, "Schienen-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("ship", Localization.Doro.Ship, UNLIMITED, 1, "Fluss-Aufträge"));
-            baseUnlockables.Goals.Add(new Goal("trainStation", Localization.Doro.Trainstation, UNLIMITED, 2, "beendet = 1/Plättchen"));
-            baseUnlockables.Goals.Add(new Goal("harbor", Localization.Doro.Harbor, UNLIMITED, 2, "beendet = 1/Plättchen"));
+            baseUnlockables.Goals.Add(new Goal("redHearts", Localization.Doro.RedHearts, UNLIMITED, 1, Localization.Doro.RedHearts_Descr));
+            baseUnlockables.Goals.Add(new Goal("circus", Localization.Doro.Circus, 10, 10, Localization.Doro.Circus_Descr));
+            baseUnlockables.Goals.Add(new Goal("signalman", Localization.Doro.Signalman, UNLIMITED, 2, Localization.Doro.Signalman_Descr));
+            baseUnlockables.Goals.Add(new Goal("shepherdess", Localization.Doro.Shepherdess, UNLIMITED, 1, Localization.Doro.Shepherdess_Descr));
+            baseUnlockables.Goals.Add(new Goal("hill", Localization.Doro.Hill, UNLIMITED, 2, Localization.Doro.Hill_Descr));
+            baseUnlockables.Goals.Add(new Goal("construction", Localization.Doro.Construction, 21, 7, Localization.Doro.Construction_Descr));
+            baseUnlockables.Goals.Add(new Goal("balloon", Localization.Doro.Balloon, UNLIMITED, 2, Localization.Doro.Balloon_Descr));
+            baseUnlockables.Goals.Add(new Goal("goldenHeart", Localization.Doro.GoldenHeart, 12, 2, Localization.Doro.GoldenHeart_Descr));
+            baseUnlockables.Goals.Add(new Goal("forestCabin", Localization.Doro.ForestCabin, UNLIMITED, 1, Localization.Doro.ForestCabin_Descr));
+            baseUnlockables.Goals.Add(new Goal("harvestFestival", Localization.Doro.HarvestFestival, UNLIMITED, 1, Localization.Doro.HarvestFestival_Descr));
+            baseUnlockables.Goals.Add(new Goal("watchtower", Localization.Doro.Watchtower, UNLIMITED, 1, Localization.Doro.Watchtower_Descr));
+            baseUnlockables.Goals.Add(new Goal("locomotive", Localization.Doro.Locomotive, UNLIMITED, 1, Localization.Doro.Locomotive_Descr));
+            baseUnlockables.Goals.Add(new Goal("ship", Localization.Doro.Ship, UNLIMITED, 1, Localization.Doro.Ship_Descr));
+            baseUnlockables.Goals.Add(new Goal("trainStation", Localization.Doro.Trainstation, UNLIMITED, 2, Localization.Doro.Trainstation_Descr));
+            baseUnlockables.Goals.Add(new Goal("harbor", Localization.Doro.Harbor, UNLIMITED, 2, Localization.Doro.Harbor_Descr));
             return baseUnlockables;
         }
 
@@ -80,7 +80,7 @@ namespace doro.GameDefinitions
         {
             var millGoals = new GoalPack("mill", Localization.Doro.Mill);
             var millUnlockables = new GoalCategory(UNLOCKABLES, Localization.Doro.Unlockables);
-            millUnlockables.Goals.Add(new Goal("mill", Localization.Doro.Mill, UNLIMITED, 2, "abgeschlossen = 2/Auftrag + 2/Fahne"));
+            millUnlockables.Goals.Add(new Goal("mill", Localization.Doro.Mill, UNLIMITED, 2, Localization.Doro.Mill_Descr));
             millGoals.Categories.Add(millUnlockables);
             return millGoals;
         }
@@ -93,10 +93,10 @@ namespace doro.GameDefinitions
             duelTasks.Goals.Add(new Goal("surround", Localization.Duel.Wraparound, 18));
             duelGoals.Categories.Add(duelTasks);
             var duelUnlockables = new GoalCategory(UNLOCKABLES, Localization.Doro.Unlockables);
-            duelUnlockables.Goals.Add(new Goal("photo", Localization.Duel.Photographer, UNLIMITED, 1, "1/Kameramarker"));
-            duelUnlockables.Goals.Add(new Goal("oak", Localization.Duel.OldOak, UNLIMITED, 1, "im Abstand 2 = 1/Waldplättchen"));
-            duelUnlockables.Goals.Add(new Goal("granary", Localization.Duel.Granary, UNLIMITED, 1, "im Abstand 2 = 1/Getreideplättchen"));
-            duelUnlockables.Goals.Add(new Goal("school", Localization.Duel.School, UNLIMITED, 1, "im Abstand 2 = 1/Stadtplättchen"));
+            duelUnlockables.Goals.Add(new Goal("photo", Localization.Duel.Photographer, UNLIMITED, 1, Localization.Duel.Photographer_Descr));
+            duelUnlockables.Goals.Add(new Goal("oak", Localization.Duel.OldOak, UNLIMITED, 1, Localization.Duel.OldOak_Descr));
+            duelUnlockables.Goals.Add(new Goal("granary", Localization.Duel.Granary, UNLIMITED, 1, Localization.Duel.Granary_Descr));
+            duelUnlockables.Goals.Add(new Goal("school", Localization.Duel.School, UNLIMITED, 1, Localization.Duel.School_Descr));
             duelGoals.Categories.Add(duelUnlockables);
             return duelGoals;
         }

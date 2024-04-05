@@ -60,7 +60,7 @@
                                 int index = i;
                                 <input type="number" id="@inputId-@index" 
                                     class="@((Scores.Length == 1) ? "singlePlayer" : (index == 0) ? "redPlayer" : "bluePlayer")"
-                                    min="@goal.Minimum" max="@goal.Maximum" step="@goal.Step"
+                                    min="@goal.Minimum" max="@goal.Maximum" step="@goal.Step" title="@goal.Description"
                                     @bind-value="Scores[index][pack.Id, category, goal.Id]" />
                             }
                         </div>

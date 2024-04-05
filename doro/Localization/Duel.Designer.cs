@@ -106,6 +106,15 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die at distance 2 = 1/Grain tile ähnelt.
+        /// </summary>
+        internal static string Granary_Descr {
+            get {
+                return ResourceManager.GetString("Granary_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Hearts ähnelt.
         /// </summary>
         internal static string Hearts {
@@ -196,6 +205,15 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die at distance 2 = 1/Forest tile ähnelt.
+        /// </summary>
+        internal static string OldOak_Descr {
+            get {
+                return ResourceManager.GetString("OldOak_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Photographer ähnelt.
         /// </summary>
         internal static string Photographer {
@@ -205,11 +223,29 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 1/Camera marker ähnelt.
+        /// </summary>
+        internal static string Photographer_Descr {
+            get {
+                return ResourceManager.GetString("Photographer_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die School ähnelt.
         /// </summary>
         internal static string School {
             get {
                 return ResourceManager.GetString("School", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die at distance 2 = 1/Village tile ähnelt.
+        /// </summary>
+        internal static string School_Descr {
+            get {
+                return ResourceManager.GetString("School_Descr", resourceCulture);
             }
         }
         
