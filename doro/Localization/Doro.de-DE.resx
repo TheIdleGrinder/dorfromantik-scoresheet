@@ -147,4 +147,55 @@
   <data name="Village" xml:space="preserve">
     <value>Dorf</value>
   </data>
+  <data name="Balloon" xml:space="preserve">
+    <value>Ballon-Startplatz</value>
+  </data>
+  <data name="Circus" xml:space="preserve">
+    <value>Zirkus</value>
+  </data>
+  <data name="Construction" xml:space="preserve">
+    <value>Baustelle</value>
+  </data>
+  <data name="ForestCabin" xml:space="preserve">
+    <value>Waldhütte</value>
+  </data>
+  <data name="GoldenHeart" xml:space="preserve">
+    <value>Goldenes Herz</value>
+  </data>
+  <data name="Harbor" xml:space="preserve">
+    <value>Hafen</value>
+  </data>
+  <data name="HarvestFestival" xml:space="preserve">
+    <value>Erntefest</value>
+  </data>
+  <data name="Hill" xml:space="preserve">
+    <value>Hügel</value>
+  </data>
+  <data name="Locomotive" xml:space="preserve">
+    <value>Lokomotive</value>
+  </data>
+  <data name="LongestStream" xml:space="preserve">
+    <value>Längster Fluss</value>
+  </data>
+  <data name="LongestTrack" xml:space="preserve">
+    <value>Längste Schiene</value>
+  </data>
+  <data name="RedHearts" xml:space="preserve">
+    <value>Rote Herzen</value>
+  </data>
+  <data name="Shepherdess" xml:space="preserve">
+    <value>Schäferin</value>
+  </data>
+  <data name="Ship" xml:space="preserve">
+    <value>Schiff</value>
+  </data>
+  <data name="Signalman" xml:space="preserve">
+    <value>Bahnwärter</value>
+  </data>
+  <data name="Trainstation" xml:space="preserve">
+    <value>Bahnhof</value>
+  </data>
+  <data name="Watchtower" xml:space="preserve">
+    <value>Wachturm</value>
+  </data>
 </root>
