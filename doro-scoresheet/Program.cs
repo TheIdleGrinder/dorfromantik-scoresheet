@@ -1,4 +1,4 @@
-using doro_scoresheet;
+using DoroScoreSheet;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 

@@ -2,14 +2,14 @@
 
 @using doro;
 
-<PageTitle>Dorfromantik Score Sheet</PageTitle>
+<PageTitle>Dorfromantik @Localization.Interface.ScoreSheet</PageTitle>
 
-<h1>Dorfromantik Punktezettel</h1>
+<h1>Dorfromantik @Localization.Interface.ScoreSheet</h1>
 
 <fieldset id="feature-selector-box">
     <div id="feature-selector">
         <div id="games">
-            <h4>Spiele</h4>
+            <h4>@Localization.Interface.Games</h4>
             @foreach (var game in Games.GetAllGames())
             {
                 <div style="width: fit-content">
@@ -21,7 +21,7 @@
             }
         </div>
         <div id="expansions">
-            <h4>Erweiterungen</h4>
+            <h4>@Localization.Interface.Expansions</h4>
             @foreach (var expansion in Definition.ExpansionPacks)
             {
                 <div>
@@ -68,7 +68,7 @@
                 }
             </div>
         }
-        <h5>Summe @(Game.GetCategoryName(category)): @String.Join(" : ", Scores.Select(s => s.GetCategoryScore(Game, category)))</h5>
+        <h5>@Localization.Interface.CategoryScore @(Game.GetCategoryName(category)): @String.Join(" : ", Scores.Select(s => s.GetCategoryScore(Game, category)))</h5>
     }
 }
 
@@ -76,9 +76,9 @@
 
 @foreach (string category in Game.GetCategories())
 {
-    <h5>Summe @(Game.GetCategoryName(category)): @String.Join(" : ", Scores.Select(s => s.GetCategoryScore(Game, category)))</h5>
+    <h5>@Localization.Interface.CategoryScore @(Game.GetCategoryName(category)): @String.Join(" : ", Scores.Select(s => s.GetCategoryScore(Game, category)))</h5>
 }
-<h4>Gesamt: @String.Join(" : ", Scores.Select(s => s.GetTotalScore(Game)))</h4>
+<h4>@Localization.Interface.TotalScore: @String.Join(" : ", Scores.Select(s => s.GetTotalScore(Game)))</h4>
 
 <style>
     #feature-selector-box {

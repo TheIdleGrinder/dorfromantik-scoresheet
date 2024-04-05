@@ -13,11 +13,25 @@
 
   <ItemGroup>
     <Folder Include="cs\" />
-    <Folder Include="Localization\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\doro\doro.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Localization\Interface.Designer.cs">
+      <DependentUpon>Interface.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Localization\Interface.resx">
+      <LastGenOutput>Interface.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

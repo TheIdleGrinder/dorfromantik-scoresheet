@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace doro.Localization {
+namespace DoroScoreSheet.Localization {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace doro.Localization {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("doro.Localization.Interface", typeof(Interface).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DoroScoreSheet.Localization.Interface", typeof(Interface).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
