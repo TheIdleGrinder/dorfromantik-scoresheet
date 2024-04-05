@@ -88,6 +88,24 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Score Sheet ähnelt.
+        /// </summary>
+        internal static string ScoreSheet {
+            get {
+                return ResourceManager.GetString("ScoreSheet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Test ähnelt.
+        /// </summary>
+        internal static string Test {
+            get {
+                return ResourceManager.GetString("Test", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Total Score ähnelt.
         /// </summary>
         internal static string TotalScore {

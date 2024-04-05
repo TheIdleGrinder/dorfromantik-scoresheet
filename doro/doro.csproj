@@ -24,9 +24,9 @@
       <DependentUpon>Duel.resx</DependentUpon>
     </Compile>
     <Compile Update="Localization\Interface.Designer.cs">
+      <DependentUpon>Interface.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Interface.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -44,8 +44,8 @@
       <LastGenOutput>Duel.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Localization\Interface.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Interface.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
   </ItemGroup>
 

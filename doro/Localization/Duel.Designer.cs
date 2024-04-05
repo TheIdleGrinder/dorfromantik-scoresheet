@@ -169,20 +169,20 @@ namespace doro.Localization {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Modul 1 ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Module 1 ähnelt.
         /// </summary>
-        internal static string Modul1 {
+        internal static string Module1 {
             get {
-                return ResourceManager.GetString("Modul1", resourceCulture);
+                return ResourceManager.GetString("Module1", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Modul 2 ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Module 2 ähnelt.
         /// </summary>
-        internal static string Modul2 {
+        internal static string Module2 {
             get {
-                return ResourceManager.GetString("Modul2", resourceCulture);
+                return ResourceManager.GetString("Module2", resourceCulture);
             }
         }
         

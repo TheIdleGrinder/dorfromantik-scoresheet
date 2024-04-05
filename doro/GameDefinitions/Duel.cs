@@ -53,8 +53,8 @@ namespace doro.GameDefinitions
 
         private static GoalPack GetModule1()
         {
-            var module1 = new GoalPack("duelModule1", Localization.Duel.Modul1);
-            var category = new GoalCategory("module1", Localization.Duel.Modul1);
+            var module1 = new GoalPack("duelModule1", Localization.Duel.Module1);
+            var category = new GoalCategory("module1", Localization.Duel.Module1);
             category.Goals.Add(new Goal("largeForest", Localization.Duel.LargeForest, 8, 2));
             category.Goals.Add(new Goal("forestMaster", Localization.Duel.ForestMaster, 8, 2));
             category.Goals.Add(new Goal("manyForests", Localization.Duel.ManyForests, 15));
@@ -70,8 +70,8 @@ namespace doro.GameDefinitions
 
         private static GoalPack GetModule2()
         {
-            var module2 = new GoalPack("duelModule2", Localization.Duel.Modul2);
-            var category = new GoalCategory("module2", Localization.Duel.Modul2);
+            var module2 = new GoalPack("duelModule2", Localization.Duel.Module2);
+            var category = new GoalCategory("module2", Localization.Duel.Module2);
             category.Goals.Add(new Goal("hearts", Localization.Duel.Hearts));
             category.Goals.Add(new Goal("photographer", Localization.Duel.Photographer, 18));
             category.Goals.Add(new Goal("oak", Localization.Duel.OldOak, 18));

@@ -129,4 +129,10 @@
   <data name="TotalScore" xml:space="preserve">
     <value>Total Score</value>
   </data>
+  <data name="ScoreSheet" xml:space="preserve">
+    <value>Score Sheet</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Test</value>
+  </data>
 </root>
