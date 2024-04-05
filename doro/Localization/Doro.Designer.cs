@@ -205,6 +205,15 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Great Mill ähnelt.
+        /// </summary>
+        internal static string Mill {
+            get {
+                return ResourceManager.GetString("Mill", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Red Hearts ähnelt.
         /// </summary>
         internal static string RedHearts {

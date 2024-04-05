@@ -78,9 +78,9 @@ namespace doro.GameDefinitions
 
         public static GoalPack GetMillGoals()
         {
-            var millGoals = new GoalPack("mill", "Große Mühle");
+            var millGoals = new GoalPack("mill", Localization.Doro.Mill);
             var millUnlockables = new GoalCategory(UNLOCKABLES, Localization.Doro.Unlockables);
-            millUnlockables.Goals.Add(new Goal("mill", "Große Mühle", UNLIMITED, 2, "abgeschlossen = 2/Auftrag + 2/Fahne"));
+            millUnlockables.Goals.Add(new Goal("mill", Localization.Doro.Mill, UNLIMITED, 2, "abgeschlossen = 2/Auftrag + 2/Fahne"));
             millGoals.Categories.Add(millUnlockables);
             return millGoals;
         }

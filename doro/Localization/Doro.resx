@@ -198,4 +198,7 @@
   <data name="Watchtower" xml:space="preserve">
     <value>Watchtower</value>
   </data>
+  <data name="Mill" xml:space="preserve">
+    <value>Great Mill</value>
+  </data>
 </root>
