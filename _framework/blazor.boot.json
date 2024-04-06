@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "DoroScoreSheet",
   "resources": {
-    "hash": "sha256-yqx7SifG1MF2dfbpa6jTXVN5SIvxPzD/neKS44s7I9E=",
+    "hash": "sha256-alNIUEka483D8aBBfrHcAcX7w5JsttbXhMrxceMhDs4=",
     "jsModuleNative": {
       "dotnet.native.8.0.3.wzxwl5s97r.js": "sha256-D4sYBYmDfH/YekgYRgX959/2RG6k28sJSHmcsn+iikk="
     },
@@ -17,8 +17,8 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "doro.wasm": "sha256-xhi648yV9Wbcxa8pFbfuTrPHiv6mRqxPfZRCFpugedE=",
-      "DoroScoreSheet.wasm": "sha256-WQYBRcsBpHcCFpJzgyWULK2m910MF//mQuSyhbFoOhs=",
+      "doro.wasm": "sha256-5BCDYnPjhVk8Ty55TF3g/3GKZdjBY5rACy2EJbVtqkw=",
+      "DoroScoreSheet.wasm": "sha256-6oPdMWhwl1XvSOoLu4K6zmS9dK+oa0t1rQBKHkF4mQo=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-1/xj9yQPQnOy1PiaVqhQ8PaP+OzqM8rqLJkE4H0idAA=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-mmo6S4AxiBcnKbs4b+7ObftqPCkIcLGiAv9gICT/5NY=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-d6tN87QrJstiTMcLaUtZ6TWiNHa8A74Suuzx95thRrE=",
@@ -54,8 +54,8 @@
     },
     "satelliteResources": {
       "de-DE": {
-        "doro.resources.wasm": "sha256-9D6xEs+SLA+0eXPMTaiWAGRydKelZVQ9FdsdvTlWfOI=",
-        "DoroScoreSheet.resources.wasm": "sha256-NROfnFnOset0A5tpyeKEHaen5pbzUZLxeAmF36Q0Ssc="
+        "doro.resources.wasm": "sha256-FDU2Tfd7Bs/ZU7X/k55s6i87pVMdrTiufabUwUG8WTE=",
+        "DoroScoreSheet.resources.wasm": "sha256-Yp97aYiKFouDhnlmve9nf+48sun2g8Rf55fbyDY51E4="
       }
     }
   },
