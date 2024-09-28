@@ -61,6 +61,24 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Adolf Tower ähnelt.
+        /// </summary>
+        internal static string AdolfTower {
+            get {
+                return ResourceManager.GetString("AdolfTower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 1/matching Village edge ähnelt.
+        /// </summary>
+        internal static string AdolfTower_Descr {
+            get {
+                return ResourceManager.GetString("AdolfTower_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Balloon Launch Site ähnelt.
         /// </summary>
         internal static string Balloon {
@@ -304,6 +322,24 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Pegasus ähnelt.
+        /// </summary>
+        internal static string Pegasus {
+            get {
+                return ResourceManager.GetString("Pegasus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 1/matching Forest edge ähnelt.
+        /// </summary>
+        internal static string Pegasus_Descr {
+            get {
+                return ResourceManager.GetString("Pegasus_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Red Hearts ähnelt.
         /// </summary>
         internal static string RedHearts {
@@ -421,6 +457,24 @@ namespace doro.Localization {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die TV Tower ähnelt.
+        /// </summary>
+        internal static string TvTower {
+            get {
+                return ResourceManager.GetString("TvTower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 1/matching Grain edge ähnelt.
+        /// </summary>
+        internal static string TvTower_Descr {
+            get {
+                return ResourceManager.GetString("TvTower_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Unlocked ähnelt.
         /// </summary>
         internal static string Unlockables {
@@ -453,6 +507,15 @@ namespace doro.Localization {
         internal static string Watchtower_Descr {
             get {
                 return ResourceManager.GetString("Watchtower_Descr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Wetterau ähnelt.
+        /// </summary>
+        internal static string Wetterau {
+            get {
+                return ResourceManager.GetString("Wetterau", resourceCulture);
             }
         }
     }

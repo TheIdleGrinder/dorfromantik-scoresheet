@@ -249,4 +249,25 @@
   <data name="Mill_Descr" xml:space="preserve">
     <value>im Abstand 2 = 2/Auftrag + 2/Fahne</value>
   </data>
+  <data name="Pegasus" xml:space="preserve">
+    <value>Pegasus</value>
+  </data>
+  <data name="TvTower" xml:space="preserve">
+    <value>Fernsehturm</value>
+  </data>
+  <data name="AdolfTower" xml:space="preserve">
+    <value>Adolfturm</value>
+  </data>
+  <data name="Wetterau" xml:space="preserve">
+    <value>Wetterau</value>
+  </data>
+  <data name="AdolfTower_Descr" xml:space="preserve">
+    <value>1/passende Dorfkante</value>
+  </data>
+  <data name="TvTower_Descr" xml:space="preserve">
+    <value>1/passende Getreidekante</value>
+  </data>
+  <data name="Pegasus_Descr" xml:space="preserve">
+    <value>1/passende Waldkante</value>
+  </data>
 </root>
