@@ -249,4 +249,25 @@
   <data name="Mill_Descr" xml:space="preserve">
     <value>at distance 2 = 2/Task + 2/Flag</value>
   </data>
+  <data name="Wetterau" xml:space="preserve">
+    <value>Wetterau</value>
+  </data>
+  <data name="AdolfTower" xml:space="preserve">
+    <value>Adolf Tower</value>
+  </data>
+  <data name="TvTower" xml:space="preserve">
+    <value>TV Tower</value>
+  </data>
+  <data name="Pegasus" xml:space="preserve">
+    <value>Pegasus</value>
+  </data>
+  <data name="AdolfTower_Descr" xml:space="preserve">
+    <value>1/matching Village edge</value>
+  </data>
+  <data name="TvTower_Descr" xml:space="preserve">
+    <value>1/matching Grain edge</value>
+  </data>
+  <data name="Pegasus_Descr" xml:space="preserve">
+    <value>1/matching Forest edge</value>
+  </data>
 </root>

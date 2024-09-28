@@ -20,7 +20,7 @@ namespace doro.GameDefinitions
                 Localization.Doro.Dorfromantik_BaseGame,
                 1,
                 GetBaseGoals(),
-                [ GetMillGoals(), GetDuelGoals() ]
+                [ GetMillGoals(), GetDuelGoals(), GetWetterauGoals() ]
             );
         }
 
@@ -99,6 +99,17 @@ namespace doro.GameDefinitions
             duelUnlockables.Goals.Add(new Goal("school", Localization.Duel.School, UNLIMITED, 1, Localization.Duel.School_Descr));
             duelGoals.Categories.Add(duelUnlockables);
             return duelGoals;
+        }
+
+        public static GoalPack GetWetterauGoals()
+        {
+            var wetterauGoals = new GoalPack("wetterau", Localization.Doro.Wetterau);
+            var wetterauUnlockables = new GoalCategory(UNLOCKABLES, Localization.Doro.Unlockables);
+            wetterauUnlockables.Goals.Add(new Goal("adolfTower", Localization.Doro.AdolfTower, 4, 1, Localization.Doro.AdolfTower_Descr));
+            wetterauUnlockables.Goals.Add(new Goal("tvTower", Localization.Doro.TvTower, 4, 1, Localization.Doro.TvTower_Descr));
+            wetterauUnlockables.Goals.Add(new Goal("pegasus", Localization.Doro.Pegasus, 4, 1, Localization.Doro.Pegasus_Descr));
+            wetterauGoals.Categories.Add(wetterauUnlockables);
+            return wetterauGoals;
         }
     }
 }
